@@ -373,14 +373,6 @@ body {
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
 .m-1 {
   margin: .25rem;
 }
@@ -420,14 +412,6 @@ body {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
-}
-
-.h-16 {
-  height: 4rem;
 }
 
 .h-full {
@@ -498,16 +482,14 @@ body {
   column-gap: 2rem;
 }
 
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(.5rem * var(--tw-space-y-reverse));
+}
+
+.rounded {
+  border-radius: .25rem;
 }
 
 .rounded-lg {
@@ -522,17 +504,8 @@ body {
   border-width: 2px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-t {
   border-top-width: 1px;
-}
-
-.border-borderColor {
-  --tw-border-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
 }
 
 .border-gray-300 {
@@ -555,18 +528,14 @@ body {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 
-.bg-darkPurple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 0 130 / var(--tw-bg-opacity, 1));
-}
-
 .bg-footerBg {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
 
 .bg-headerBg {
-  background-color: #fffc;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
@@ -592,6 +561,10 @@ body {
 
 .p-2 {
   padding: .5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-6 {
@@ -622,6 +595,11 @@ body {
   padding-bottom: 3rem;
 }
 
+.py-2 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -637,11 +615,6 @@ body {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-base {
@@ -732,20 +705,14 @@ body {
   --tw-ring-inset: inset;
 }
 
-.backdrop-blur-md {
-  --tw-backdrop-blur: blur(12px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .15s;
 }
 
-.transition-all {
-  transition-property: all;
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .15s;
 }
@@ -756,6 +723,10 @@ body {
 
 .duration-300 {
   transition-duration: .3s;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
 :root {
@@ -828,12 +799,8 @@ body {
 }
 
 @media (width >= 768px) {
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

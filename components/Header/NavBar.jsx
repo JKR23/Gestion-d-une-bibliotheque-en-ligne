@@ -1,39 +1,34 @@
 import Link from "next/link";
-//flex justify-center space-x-8 : le notre
-//hidden md:flex justify-center gap-x-8 flex-grow
+
 export default function NavBar() {
  return (
   <ul className="flex justify-center gap-x-8 flex-grow">
    <li>
-    <Link
-     href="/"
-     className="text-white text-lg font-semibold hover:scale-110 transform transition duration-300"
-    >
-     Accueil
+    <Link href="/">
+     <button className="text-white transform transition-transform duration-300 ease-in-out hover:scale-110 px-4 py-2 rounded">
+      Accueil
+     </button>
     </Link>
    </li>
    <li>
-    <Link
-     href="/catalogue"
-     className="text-white text-lg font-semibold hover:scale-110 transform transition duration-300"
-    >
-     Catalogue
+    <Link href="/catalogue">
+     <button className="text-white transform transition-transform duration-300 ease-in-out hover:scale-110 px-4 py-2 rounded">
+      Catalogue
+     </button>
     </Link>
    </li>
    <li>
-    <Link
-     href="/contact"
-     className="text-white text-lg font-semibold hover:scale-110 transform transition duration-300"
-    >
-     Contact
+    <Link href="/contact">
+     <button className="text-white transform transition-transform duration-300 ease-in-out hover:scale-110 px-4 py-2 rounded">
+      Contact
+     </button>
     </Link>
    </li>
    <li>
-    <Link
-     href="/deconnexion"
-     className="text-white text-lg font-semibold hover:scale-110 transform transition duration-300"
-    >
-     Deconnexion
+    <Link href="/deconnexion">
+     <button className="text-white transform transition-transform duration-300 ease-in-out hover:scale-110 px-4 py-2 rounded">
+      Deconnexion
+     </button>
     </Link>
    </li>
   </ul>

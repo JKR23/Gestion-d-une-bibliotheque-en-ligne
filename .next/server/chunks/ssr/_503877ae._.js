@@ -110,22 +110,22 @@ function Home() {
                 className: "text-2xl font-semibold",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$onglets$2f$Accueil$2f$Accueil$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.jsx",
-                    lineNumber: 10,
+                    lineNumber: 11,
                     columnNumber: 6
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.jsx",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 5
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/page.jsx",
-            lineNumber: 8,
+            lineNumber: 9,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/page.jsx",
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 3
     }, this);
 }
@@ -149,67 +149,91 @@ function NavBar() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     href: "/",
-                    className: "text-white text-lg font-semibold hover:scale-110 transform transition duration-300",
-                    children: "Accueil"
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "text-white transform transition-transform duration-300 ease-in-out hover:scale-110 px-4 py-2 rounded",
+                        children: "Accueil"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Header/NavBar.jsx",
+                        lineNumber: 8,
+                        columnNumber: 6
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 8,
+                    lineNumber: 7,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 7,
+                lineNumber: 6,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     href: "/catalogue",
-                    className: "text-white text-lg font-semibold hover:scale-110 transform transition duration-300",
-                    children: "Catalogue"
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "text-white transform transition-transform duration-300 ease-in-out hover:scale-110 px-4 py-2 rounded",
+                        children: "Catalogue"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Header/NavBar.jsx",
+                        lineNumber: 15,
+                        columnNumber: 6
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 16,
+                    lineNumber: 14,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 15,
+                lineNumber: 13,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     href: "/contact",
-                    className: "text-white text-lg font-semibold hover:scale-110 transform transition duration-300",
-                    children: "Contact"
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "text-white transform transition-transform duration-300 ease-in-out hover:scale-110 px-4 py-2 rounded",
+                        children: "Contact"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Header/NavBar.jsx",
+                        lineNumber: 22,
+                        columnNumber: 6
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 24,
+                    lineNumber: 21,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 23,
+                lineNumber: 20,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     href: "/deconnexion",
-                    className: "text-white text-lg font-semibold hover:scale-110 transform transition duration-300",
-                    children: "Deconnexion"
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "text-white transform transition-transform duration-300 ease-in-out hover:scale-110 px-4 py-2 rounded",
+                        children: "Deconnexion"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Header/NavBar.jsx",
+                        lineNumber: 29,
+                        columnNumber: 6
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 32,
+                    lineNumber: 28,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 31,
+                lineNumber: 27,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Header/NavBar.jsx",
-        lineNumber: 6,
+        lineNumber: 5,
         columnNumber: 3
     }, this);
 }
@@ -219,7 +243,6 @@ function NavBar() {
 
 var { g: global, d: __dirname } = __turbopack_context__;
 {
-// components/Header.jsx
 __turbopack_context__.s({
     "default": (()=>Header)
 });
@@ -229,26 +252,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2f$NavB
 ;
 function Header() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "fixed w-full bg-headerBg backdrop-blur-md z-50 border-b border-borderColor",
+        className: "flex items-center justify-between p-8 bg-headerBg",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-darkPurple flex items-center justify-between h-16 text-white p-6",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: "text-4xl font-bold text-center",
-                    children: "BibliOnLine"
-                }, void 0, false, {
-                    fileName: "[project]/components/Header/Header.jsx",
-                    lineNumber: 8,
-                    columnNumber: 5
-                }, this)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "text-white cursor-pointer",
+                        children: "BibliOnLine"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Header/Header.jsx",
+                        lineNumber: 8,
+                        columnNumber: 5
+                    }, this),
+                    " "
+                ]
+            }, void 0, true, {
                 fileName: "[project]/components/Header/Header.jsx",
                 lineNumber: 7,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2f$NavBar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/components/Header/Header.jsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 4
             }, this),
             " "
@@ -322,12 +347,43 @@ function QuickLink() {
                 lineNumber: 7,
                 columnNumber: 4
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Header$2f$NavBar$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                className: " gap-x-8 flex-grow",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: "Accueil"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Footer/QuickLink.jsx",
+                        lineNumber: 9,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: "Catalogue"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Footer/QuickLink.jsx",
+                        lineNumber: 10,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: "Contact"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Footer/QuickLink.jsx",
+                        lineNumber: 11,
+                        columnNumber: 5
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: "Deconnexion"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Footer/QuickLink.jsx",
+                        lineNumber: 12,
+                        columnNumber: 5
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/components/Footer/QuickLink.jsx",
                 lineNumber: 8,
                 columnNumber: 4
-            }, this),
-            " "
+            }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Footer/QuickLink.jsx",
@@ -404,7 +460,6 @@ function ContactFooter() {
 
 var { g: global, d: __dirname } = __turbopack_context__;
 {
-//components/Footer/Footer.jsx
 __turbopack_context__.s({
     "default": (()=>Footer)
 });
@@ -423,21 +478,43 @@ function Footer() {
             className: "container mx-auto px-4 py-12",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 md:grid-cols-4 gap-8",
+                    className: "grid grid-cols-1 md:grid-cols-3 gap-8",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2f$QuickLink$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                            fileName: "[project]/components/Footer/Footer.jsx",
-                            lineNumber: 10,
-                            columnNumber: 6
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2f$About$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                            fileName: "[project]/components/Footer/Footer.jsx",
-                            lineNumber: 11,
-                            columnNumber: 6
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2f$Contact$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        " ",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col items-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2f$QuickLink$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                fileName: "[project]/components/Footer/Footer.jsx",
+                                lineNumber: 13,
+                                columnNumber: 7
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/components/Footer/Footer.jsx",
                             lineNumber: 12,
+                            columnNumber: 6
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col items-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2f$About$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                fileName: "[project]/components/Footer/Footer.jsx",
+                                lineNumber: 16,
+                                columnNumber: 7
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Footer/Footer.jsx",
+                            lineNumber: 15,
+                            columnNumber: 6
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col items-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2f$Contact$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                fileName: "[project]/components/Footer/Footer.jsx",
+                                lineNumber: 19,
+                                columnNumber: 7
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Footer/Footer.jsx",
+                            lineNumber: 18,
                             columnNumber: 6
                         }, this)
                     ]
@@ -452,12 +529,12 @@ function Footer() {
                         children: "© 2025 BibliOnLine. Tous droits réservés."
                     }, void 0, false, {
                         fileName: "[project]/components/Footer/Footer.jsx",
-                        lineNumber: 15,
+                        lineNumber: 23,
                         columnNumber: 6
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Footer/Footer.jsx",
-                    lineNumber: 14,
+                    lineNumber: 22,
                     columnNumber: 5
                 }, this)
             ]

@@ -69,13 +69,6 @@ export const loginUser = async (req, res) => {
   // Récupération de l'utilisateur
   const user = await userModel.findUserByEmail(email);
 
-  // Génération d'un token JWT
-  const token = jwt.sign(
-   { userId: user.id, email: user.email, role: user.role }, // Payload du token
-   process.env.JWT_SECRET, // Clé secrète pour signer le token
-   { expiresIn: "1h" } // Durée de validité du token (ici 1 heure)
-  );
-
   console.log(`Utilisateur connecté avec succès: ${user.username}`);
   // Renvoi du token au client
   res.status(200).json({ token });

@@ -1,5 +1,92 @@
 module.exports = {
 
+"[project]/components/pageweb/Accueil/Section1.jsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, d: __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>Section1)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+;
+function Section1() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: "Section 1"
+    }, void 0, false, {
+        fileName: "[project]/components/pageweb/Accueil/Section1.jsx",
+        lineNumber: 2,
+        columnNumber: 9
+    }, this);
+}
+}}),
+"[project]/components/pageweb/Accueil/Section2.jsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, d: __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>Section2)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+;
+function Section2() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: "Section 2"
+    }, void 0, false, {
+        fileName: "[project]/components/pageweb/Accueil/Section2.jsx",
+        lineNumber: 2,
+        columnNumber: 9
+    }, this);
+}
+}}),
+"[project]/components/pageweb/Accueil/Accueil.jsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, d: __dirname } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>Accueil)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Accueil$2f$Section1$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/pageweb/Accueil/Section1.jsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Accueil$2f$Section2$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/pageweb/Accueil/Section2.jsx [app-rsc] (ecmascript)");
+;
+;
+;
+function Accueil() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Accueil$2f$Section1$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/components/pageweb/Accueil/Accueil.jsx",
+                    lineNumber: 8,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/pageweb/Accueil/Accueil.jsx",
+                lineNumber: 7,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Accueil$2f$Section2$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/components/pageweb/Accueil/Accueil.jsx",
+                    lineNumber: 11,
+                    columnNumber: 5
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/pageweb/Accueil/Accueil.jsx",
+                lineNumber: 10,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/pageweb/Accueil/Accueil.jsx",
+        lineNumber: 6,
+        columnNumber: 3
+    }, this);
+}
+}}),
 "[project]/app/page.jsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -11,11 +98,7 @@ __turbopack_context__.s({
     "default": (()=>Home)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-(()=>{
-    const e = new Error("Cannot find module '@/components/onglets/Accueil/Accueil.jsx'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Accueil$2f$Accueil$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/pageweb/Accueil/Accueil.jsx [app-rsc] (ecmascript)");
 ;
 ;
 function Home() {
@@ -24,7 +107,7 @@ function Home() {
             className: "p-8",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "text-2xl font-semibold",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Accueil, {}, void 0, false, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Accueil$2f$Accueil$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.jsx",
                     lineNumber: 11,
                     columnNumber: 6
@@ -558,4 +641,4 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 
 };
 
-//# sourceMappingURL=_7d3af0f9._.js.map
+//# sourceMappingURL=_a2fc9c63._.js.map

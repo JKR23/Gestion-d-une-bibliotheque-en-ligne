@@ -1,6 +1,7 @@
 //represente la page d'acceuil
 // app/page.js
-import Accueil from "@/components/onglets/Accueil/Accueil.jsx";
+
+import Accueil from "@/components/pageweb/Accueil/Accueil.jsx";
 
 export default function Home() {
  return (

@@ -5,7 +5,7 @@
  "main": "server.js",
  "type": "module",
  "scripts": {
-  "dev": "nodemon server.js",
+  "dev": "concurrently \"next dev -p 3000 --turbopack\" \"nodemon server.js\"",
   "build": "next build",
   "start": "next start",
   "lint": "next lint"
@@ -29,6 +29,7 @@
  },
  "devDependencies": {
   "autoprefixer": "^10.4.20",
+  "concurrently": "^9.1.2",
   "nodemon": "^3.1.9",
   "postcss": "^8.5.3",
   "prisma": "^6.4.0",

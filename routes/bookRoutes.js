@@ -8,7 +8,6 @@ import {
  deleteBook,
  addBook,
 } from "../controllers/bookController.js"; // Assurez-vous d'importer les bons contrôleurs
-import { authenticateToken, isAdmin } from "../middleware/authMiddleware.js"; // Import des middlewares pour vérification d'authentification et d'administration
 
 // Route pour obtenir tous les livres
 router.get("/", getBooks);

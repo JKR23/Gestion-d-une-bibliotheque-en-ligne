@@ -11,7 +11,7 @@ export default {
     background: "var(--background)",
     foreground: "var(--foreground)",
     border: "white",
-    headerBg: "#ffffffcc", // Blanc avec transparence
+    headerBg: "#111827", // Gris foncé
     footerBg: "#111827", // Gris foncé
     footerText: "#d1d5db", // Gris clair pour le texte
     borderColor: "#1f2937", // Gris foncé pour les bordures
