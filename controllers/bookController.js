@@ -41,15 +41,16 @@ export const getBookById = async (req, res) => {
 
 // Fonction pour ajouter un livre
 export const addBook = async (req, res) => {
- const { title, author, isbn, description, stock } = req.body;
+ const { title, author, description, stock, genre, isAvailable } = req.body; // Ajouter genre et isAvailable
  try {
   const newBook = await prisma.book.create({
    data: {
     title,
     author,
-    isbn,
     description,
-    stock, // S'assurer que stock est inclus dans le modèle Prisma
+    stock,
+    genre, // Ajouter genre ici
+    isAvailable, // Ajouter isAvailable ici
    },
   });
   res.status(201).json(newBook);
@@ -96,8 +97,7 @@ export const searchBooks = async (req, res) => {
 // Fonction pour modifier un livre par ID
 export const updateBook = async (req, res) => {
  const { id } = req.params;
- const { title, author, description, stock } = req.body;
-
+ const { title, author, description, stock, genre, isAvailable } = req.body; // Ajouter genre et isAvailable
  try {
   const book = await prisma.book.findUnique({
    where: { id: parseInt(id) },
@@ -109,7 +109,7 @@ export const updateBook = async (req, res) => {
 
   const updatedBook = await prisma.book.update({
    where: { id: parseInt(id) },
-   data: { title, author, description, stock },
+   data: { title, author, description, stock, genre, isAvailable }, // Ajouter genre et isAvailable dans la mise à jour
   });
 
   res.status(200).json(updatedBook);

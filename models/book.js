@@ -1,13 +1,25 @@
+//models/book.js
 const prisma = require("../prismaClient"); // Import du client Prisma
 
 // Fonction pour ajouter un livre
-const addBook = async (title, author, isbn, description) => {
+const addBook = async (
+ title,
+ author,
+ isbn,
+ description,
+ genre,
+ isAvailable,
+ stock
+) => {
  const book = await prisma.book.create({
   data: {
    title,
    author,
    isbn,
    description,
+   genre, // Ajouter genre ici
+   isAvailable, // Ajouter isAvailable ici
+   stock,
   },
  });
  return book;
@@ -22,15 +34,26 @@ const findBookByTitle = async (title) => {
 };
 
 // Fonction pour modifier un livre par ID
-const updateBook = async (id, title, author, isbn, description, stock) => {
+const updateBook = async (
+ id,
+ title,
+ author,
+ isbn,
+ description,
+ genre,
+ isAvailable,
+ stock
+) => {
  const updatedBook = await prisma.book.update({
-  where: { id: parseInt(id) }, // Recherche par ID
+  where: { id: parseInt(id) },
   data: {
    title,
    author,
    isbn,
    description,
-   stock, // Met à jour le livre avec les nouvelles données
+   genre, // Ajouter genre dans la mise à jour
+   isAvailable, // Ajouter isAvailable dans la mise à jour
+   stock, // Met à jour stock
   },
  });
  return updatedBook;

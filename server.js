@@ -4,7 +4,6 @@ import "dotenv/config";
 import bookRoutes from "./routes/bookRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import reservationRoutes from "./routes/reservationRoutes.js"; // Ajout des routes reservation
-import reviewRoutes from "./routes/reviewRoutes.js"; // Ajout des routes review
 
 // Importation des fichiers et librairies
 import express, { json } from "express";
@@ -29,7 +28,6 @@ app.use(express.static("public"));
 app.use("/api/books", bookRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/reservations", reservationRoutes); // Ajout des routes de réservation
-app.use("/api/reviews", reviewRoutes); // Ajout des routes de review
 
 // Gestion des erreurs 404
 app.use((request, response) => {

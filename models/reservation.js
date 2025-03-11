@@ -1,7 +1,9 @@
 // models/reservation.js
 import { prisma } from "../prismaClient.js"; // Import du client Prisma
 
-// Fonction pour créer une réservation
+//todo : getAllreservation
+
+// Fonction pour créer une réservation : controller
 const createReservation = async (userId, bookId, reservedUntil) => {
  console.log(
   "Création de réservation pour l'utilisateur ID:",
@@ -12,13 +14,37 @@ const createReservation = async (userId, bookId, reservedUntil) => {
   reservedUntil
  );
 
+ // Vérification de l'existence de l'utilisateur
+ const user = await prisma.user.findUnique({
+  where: { id: userId },
+ });
+
+ if (!user) {
+  throw new Error("Utilisateur non trouvé.");
+ }
+
+ // Vérification de l'existence du livre
+ const book = await prisma.book.findUnique({
+  where: { id: bookId },
+ });
+
+ if (!book) {
+  throw new Error("Livre non trouvé.");
+ }
+
+ // Vérification du stock du livre
+ if (book.stock <= 0) {
+  throw new Error("Le livre n'est plus disponible pour réservation.");
+ }
+
+ // Création de la réservation
  const reservation = await prisma.reservation.create({
   data: {
    userId,
    bookId,
    reservedAt: new Date(), // La date à laquelle la réservation est faite
    reservedUntil: new Date(reservedUntil), // La date jusqu'à laquelle la réservation est valide
-   status: "PENDING", // Par défaut, une réservation est en statut 'RESERVED'
+   status: "PENDING", // Par défaut, une réservation est en statut 'PENDING'
   },
  });
 
@@ -146,6 +172,28 @@ const getReservationsByUserName = async (userName) => {
  }
 };
 
+// Mettre à jour le statut d'une réservation
+const updateReservationStatus = async (reservationId, status) => {
+ console.log(
+  `Mise à jour du statut de la réservation ID:${reservationId} vers ${status}`
+ );
+
+ return await prisma.reservation.update({
+  where: { id: reservationId },
+  data: { status: status },
+ });
+};
+
+// Fonction pour confirmer une réservation
+const confirmReservation = async (reservationId) => {
+ console.log("Confirmation de la réservation ID:", reservationId);
+
+ return await prisma.reservation.update({
+  where: { id: reservationId },
+  data: { status: "CONFIRMED" }, // Mise à jour du statut à "CONFIRMED"
+ });
+};
+
 // Exporter le modèle avec `export default`
 export default {
  createReservation,
@@ -154,4 +202,6 @@ export default {
  getReservationsByUserName,
  getUserReservations,
  deleteReservation,
+ updateReservationStatus,
+ confirmReservation,
 };

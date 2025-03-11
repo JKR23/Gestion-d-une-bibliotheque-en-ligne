@@ -1,6 +1,11 @@
 // controllers/reservationController.js
 import reservationModel from "../models/reservation.js"; // Import du modèle de réservation
 
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
+
+//todo : getAllreservation
+
 // Créer une réservation
 export const createReservation = async (req, res) => {
  try {
@@ -16,7 +21,19 @@ export const createReservation = async (req, res) => {
     .json({ error: "La date de réservation est requise." });
   }
 
-  // Création de la réservation avec la date réservée et réservée jusqu'à
+  // Vérification du livre et de son stock
+  const book = await prisma.book.findUnique({
+   where: { id: bookId },
+  });
+
+  // Si le livre n'existe pas ou si le stock est à zéro
+  if (!book || book.stock <= 0) {
+   return res
+    .status(400)
+    .json({ error: "Le livre n'est plus disponible pour réservation." });
+  }
+
+  // Appeler la fonction de création de la réservation dans le modèle
   const reservation = await reservationModel.createReservation(
    userId,
    bookId,
@@ -26,12 +43,23 @@ export const createReservation = async (req, res) => {
   // Log de la réponse
   console.log("Réservation créée :", reservation);
 
+  // Mettre à jour le stock du livre
+  await prisma.book.update({
+   where: { id: bookId },
+   data: {
+    stock: book.stock - 1, // Décrémenter le stock du livre réservé
+   },
+  });
+
   res.status(201).json(reservation);
  } catch (error) {
-  console.error("Erreur lors de la création de la réservation :", error);
-  res
-   .status(500)
-   .json({ error: "Erreur lors de la création de la réservation" });
+  console.error(
+   "Erreur lors de la création de la réservation :",
+   error.message
+  );
+  res.status(500).json({
+   error: error.message || "Erreur lors de la création de la réservation",
+  });
  }
 };
 
@@ -200,6 +228,95 @@ export const getReservationsByUserName = async (req, res) => {
   );
   res.status(500).json({
    error: "Erreur lors de la recherche des réservations par utilisateur",
+  });
+ }
+};
+
+// Confirmer une réservation
+export const confirmReservation = async (req, res) => {
+ const { reservationId } = req.params;
+ console.log(
+  "Demande de confirmation de la réservation avec ID:",
+  reservationId
+ );
+
+ try {
+  // Vérifier si l'ID de réservation est valide
+  if (!reservationId) {
+   console.log("ID de réservation manquant.");
+   return res.status(400).json({ error: "L'ID de réservation est requis." });
+  }
+
+  // Convertir l'ID de réservation en entier
+  const reservationIdInt = parseInt(reservationId, 10);
+  if (isNaN(reservationIdInt)) {
+   console.log("ID de réservation invalide:", reservationId);
+   return res
+    .status(400)
+    .json({ error: "L'ID de réservation doit être un nombre valide." });
+  }
+
+  // Confirmer la réservation
+  const reservation = await reservationModel.updateReservationStatus(
+   reservationIdInt,
+   "CONFIRMED"
+  );
+
+  // Si la réservation n'existe pas ou échoue
+  if (!reservation) {
+   console.log("Réservation non trouvée.");
+   return res.status(404).json({ error: "Réservation non trouvée." });
+  }
+
+  console.log("Réservation confirmée:", reservation);
+  res.status(200).json({ message: "Réservation confirmée", reservation });
+ } catch (error) {
+  console.error("Erreur lors de la confirmation de la réservation:", error);
+  res.status(500).json({
+   error: "Erreur lors de la confirmation de la réservation",
+  });
+ }
+};
+
+// Annuler une réservation
+export const cancelReservation = async (req, res) => {
+ const { reservationId } = req.params;
+ console.log("Demande d'annulation de la réservation avec ID:", reservationId);
+
+ try {
+  // Vérifier si l'ID de réservation est valide
+  if (!reservationId) {
+   console.log("ID de réservation manquant.");
+   return res.status(400).json({ error: "L'ID de réservation est requis." });
+  }
+
+  // Convertir l'ID de réservation en entier
+  const reservationIdInt = parseInt(reservationId, 10);
+  if (isNaN(reservationIdInt)) {
+   console.log("ID de réservation invalide:", reservationId);
+   return res
+    .status(400)
+    .json({ error: "L'ID de réservation doit être un nombre valide." });
+  }
+
+  // Annuler la réservation
+  const reservation = await reservationModel.updateReservationStatus(
+   reservationIdInt,
+   "CANCELED"
+  );
+
+  // Si la réservation n'existe pas ou échoue
+  if (!reservation) {
+   console.log("Réservation non trouvée.");
+   return res.status(404).json({ error: "Réservation non trouvée." });
+  }
+
+  console.log("Réservation annulée:", reservation);
+  res.status(200).json({ message: "Réservation annulée", reservation });
+ } catch (error) {
+  console.error("Erreur lors de l'annulation de la réservation:", error);
+  res.status(500).json({
+   error: "Erreur lors de l'annulation de la réservation",
   });
  }
 };

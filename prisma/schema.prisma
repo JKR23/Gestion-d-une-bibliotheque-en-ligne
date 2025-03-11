@@ -3,7 +3,6 @@
 
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
@@ -14,13 +13,26 @@ generator client {
 }
 
 model User {
+  id            Int           @id @default(autoincrement())
+  firstName     String        
+  lastName      String        
+  email         String        @unique
+  password      String        
+  role          Role          @default(USER)
+  address       Address?      @relation(fields: [addressId], references: [id]) // Ajout de la relation avec l'adresse
+  addressId     Int?          @unique // Référence à l'adresse
+  reservations  Reservation[] 
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model Address {
   id            Int       @id @default(autoincrement())
-  username      String    @unique
-  email         String    @unique
-  password      String
-  role          Role      @default(USER)
-  reservations  Reservation[]
-  reviews       Review[]
+  street        String
+  city          String
+  state         String
+  postalCode    String
+  user          User?     @relation
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }
@@ -31,10 +43,11 @@ model Book {
   author        String
   description   String?
   stock         Int
+  genre         String    // Genre du livre
+  isAvailable   Boolean   @default(true)  // Indique si le livre est disponible
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
   reservations  Reservation[]
-  reviews       Review[]
 }
 
 model Reservation {
@@ -48,18 +61,6 @@ model Reservation {
   book          Book                @relation(fields: [bookId], references: [id])
 }
 
-model Review {
-  id          Int       @id @default(autoincrement())
-  userId      Int
-  bookId      Int
-  rating      Int       @default(0) 
-  comment     String?
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  user        User      @relation(fields: [userId], references: [id])
-  book        Book      @relation(fields: [bookId], references: [id])
-}
-
 enum Role {
   USER
   ADMIN
@@ -70,4 +71,3 @@ enum ReservationStatus {
   CONFIRMED
   CANCELED
 }
-
