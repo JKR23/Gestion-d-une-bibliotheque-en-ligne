@@ -8,6 +8,7 @@ import Home from "@/app/page.jsx"; // Page d'accueil
 import Catalogue from "@/app/catalogue/page.jsx"; // Page catalogue
 import Contact from "@/app/contact/page"; // Page contact
 import Deconnexion from "@/app/deconnexion/page"; // Page deconnexion
+import Reservation from "@/app/reservation/page.jsx";
 import "./globals.css"; // Import des styles globaux
 
 export default function Layout({ children }) {
@@ -26,6 +27,8 @@ export default function Layout({ children }) {
     return <Home />;
    case "catalogue":
     return <Catalogue />;
+   case "reservation":
+    return <Reservation />;
    case "contact":
     return <Contact />;
    case "deconnexion":

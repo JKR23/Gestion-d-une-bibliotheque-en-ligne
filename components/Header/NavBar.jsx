@@ -33,6 +33,20 @@ export default function NavBar({ changePage, currentPage }) {
    </li>
    <li>
     <button
+     onClick={() => changePage("reservation")} // Change à la page "deconnexion"
+     className={`text-white px-4 py-2 rounded transform transition-transform duration-300 ease-in-out 
+            ${
+             currentPage === "reservation"
+              ? "scale-110 bg-blue-500 bg-opacity-20"
+              : "hover:scale-105 hover:bg-blue-500 hover:bg-opacity-20"
+            }
+          `}
+    >
+     Reservation
+    </button>
+   </li>
+   <li>
+    <button
      onClick={() => changePage("contact")} // Change à la page "contact"
      className={`text-white px-4 py-2 rounded transform transition-transform duration-300 ease-in-out 
             ${

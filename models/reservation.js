@@ -5,50 +5,53 @@ import { prisma } from "../prismaClient.js"; // Import du client Prisma
 
 // Fonction pour créer une réservation : controller
 const createReservation = async (userId, bookId, reservedUntil) => {
+ // Log détaillant la tentative de création de réservation
  console.log(
-  "Création de réservation pour l'utilisateur ID:",
-  userId,
-  "avec le livre ID:",
-  bookId,
-  "et réservé jusqu'à:",
-  reservedUntil
+  `Création de réservation pour l'utilisateur ID: ${userId}, livre ID: ${bookId}, réservé jusqu'à: ${reservedUntil}`
  );
 
  // Vérification de l'existence de l'utilisateur
+ console.log(`Vérification de l'existence de l'utilisateur ID: ${userId}`);
  const user = await prisma.user.findUnique({
   where: { id: userId },
  });
 
  if (!user) {
+  console.log(`Erreur : L'utilisateur avec ID ${userId} n'existe pas.`);
   throw new Error("Utilisateur non trouvé.");
  }
 
  // Vérification de l'existence du livre
+ console.log(`Vérification de l'existence du livre ID: ${bookId}`);
  const book = await prisma.book.findUnique({
   where: { id: bookId },
  });
 
  if (!book) {
+  console.log(`Erreur : Le livre avec ID ${bookId} n'existe pas.`);
   throw new Error("Livre non trouvé.");
  }
 
  // Vérification du stock du livre
  if (book.stock <= 0) {
+  console.log(`Erreur : Le livre avec ID ${bookId} est en rupture de stock.`);
   throw new Error("Le livre n'est plus disponible pour réservation.");
  }
 
  // Création de la réservation
+ console.log("Création de la réservation dans la base de données.");
  const reservation = await prisma.reservation.create({
   data: {
    userId,
    bookId,
-   reservedAt: new Date(), // La date à laquelle la réservation est faite
-   reservedUntil: new Date(reservedUntil), // La date jusqu'à laquelle la réservation est valide
-   status: "PENDING", // Par défaut, une réservation est en statut 'PENDING'
+   reservedAt: new Date(), // Date de réservation
+   reservedUntil: new Date(reservedUntil), // Date de fin de la réservation
+   status: "PENDING", // Le statut initial de la réservation
   },
  });
 
- console.log("Réservation créée :", reservation);
+ // Log de la réservation créée
+ console.log("Réservation créée avec succès :", reservation);
  return reservation;
 };
 
