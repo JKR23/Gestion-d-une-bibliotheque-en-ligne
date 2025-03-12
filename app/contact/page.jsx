@@ -1,4 +1,5 @@
-import Contact from "@/components/onglets/Contact.jsx";
+//app/contact/page.jsx
+import Contact from "@/components/pageweb/Contact.jsx";
 
 export default function Contacts() {
  return (

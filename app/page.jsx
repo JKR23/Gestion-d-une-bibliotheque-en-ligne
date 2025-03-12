@@ -6,7 +6,7 @@ import Accueil from "@/components/pageweb/Accueil/Accueil.jsx";
 export default function Home() {
  return (
   <div>
-   <main className="p-8">
+   <main>
     <div className="text-2xl font-semibold">
      <Accueil />
     </div>
