@@ -1,3 +1,7 @@
+import Connexion from "@/components/pageweb/Connexion";
 export default function Deconnexion() {
- return <div>affiche page de connexion</div>;
+ return <div><Connexion/></div>;
 }
+
+
+
