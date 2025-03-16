@@ -17,8 +17,10 @@ const FormInput = ({ label, type, name, value, onChange, required = true }) => (
             value={value} // Valeur actuelle de l'input
             onChange={onChange} // Fonction déclenchée lors du changement de valeur
             className="w-full px-4 py-3 rounded-lg border border-light-border 
-                     dark:border-gray-600 dark:bg-gray-800
-                     bg-white dark:bg-gray-800 text-light-text-darker dark:text-white" // Styles CSS pour le champ
+    dark:border-gray-600 dark:bg-gray-800 bg-white text-light-text-darker 
+    dark:text-white focus:outline-none focus:ring-2 focus:ring-light-primary 
+    transition duration-200"
+            // Styles CSS pour le champ
             required={required} // Champ requis ou non
         />
     </div>
@@ -46,21 +48,27 @@ const FormHeader = ({ isLogin }) => (
 const LoginForm = ({ formData, handleChange, handleSubmit, toggleForm }) => (
     <form onSubmit={handleSubmit} className="space-y-6">
         {/* Champ Email */}
-        <FormInput
-            label="Email"
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-        />
+        <div className="mb-4">
+            <FormInput
+                label="Email"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+            />
+        </div>
+
         {/* Champ Mot de passe */}
-        <FormInput
-            label="Mot de passe"
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-        />
+        <div className="mb-4">
+            <FormInput
+                label="Mot de passe"
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+            />
+        </div>
+
         {/* Actions du formulaire (bouton de soumission et lien pour changer de formulaire) */}
         <FormActions isLogin={true} toggleForm={toggleForm} />
     </form>
@@ -75,7 +83,7 @@ const RegisterForm = ({ formData, handleChange, handleSubmit, toggleForm }) => (
             value={formData.identifiant}
             onChange={handleChange}
             placeholder="Votre nom"
-            className="w-full p-2 mb-4 border rounded"
+            className="w-full p-2 mb-4 border border-blue-500 rounded"
             required
         />
         <input
@@ -84,7 +92,7 @@ const RegisterForm = ({ formData, handleChange, handleSubmit, toggleForm }) => (
             value={formData.prenom}
             onChange={handleChange}
             placeholder="Votre Prénom"
-            className="w-full p-2 mb-4 border rounded"
+            className="w-full p-2 mb-4 border border-blue-500 rounded"
             required
         />
         {/* <input
@@ -102,7 +110,7 @@ const RegisterForm = ({ formData, handleChange, handleSubmit, toggleForm }) => (
             value={formData.email}
             onChange={handleChange}
             placeholder="Votre Email"
-            className="w-full p-2 mb-4 border rounded"
+            className="w-full p-2 mb-4 border border-blue-500 rounded"
             required
         />
         <input
@@ -111,7 +119,7 @@ const RegisterForm = ({ formData, handleChange, handleSubmit, toggleForm }) => (
             value={formData.ville}
             onChange={handleChange}
             placeholder="Votre adresse"
-            className="w-full p-2 mb-4 border rounded"
+            className="w-full p-2 mb-4 border border-blue-500 rounded"
         />
         <input
             type="password"
@@ -119,7 +127,7 @@ const RegisterForm = ({ formData, handleChange, handleSubmit, toggleForm }) => (
             value={formData.motDePasse}
             onChange={handleChange}
             placeholder="Mot de passe"
-            className="w-full p-2 mb-4 border rounded"
+            className="w-full p-2 mb-4 border border-blue-500 rounded"
             required
         />
         <input
@@ -128,7 +136,7 @@ const RegisterForm = ({ formData, handleChange, handleSubmit, toggleForm }) => (
             value={formData.confirmMotDePasse}
             onChange={handleChange}
             placeholder="Confirmer le mot de passe"
-            className="w-full p-2 mb-4 border rounded"
+            className="w-full p-2 mb-4 border border-blue-500 rounded"
             required
         />
         {/* <input
@@ -215,10 +223,10 @@ export default function Connexion() {
 
     return (
         <div className="min-h-[80vh] flex items-center justify-center px-4">
-            <div className="w-full max-w-md">
+            <div className="w-full max-w-lg">
                 <div
                     className="bg-white dark:bg-gray-800/50 rounded-2xl p-8 
-                              border border-light-border dark:border-gray-700
+                              border border-red-border dark:border-gray-700
                               shadow-lg dark:shadow-gray-900/30"
                 >
                     {/* En-tête du formulaire */}
