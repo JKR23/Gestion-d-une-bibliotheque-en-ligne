@@ -1,4 +1,14 @@
-export default function NavBar({ changePage, currentPage, onLogout, role }) {
+import { useEffect, useState } from "react";
+
+export default function NavBar({ changePage, currentPage, onLogout }) {
+ const [role, setRole] = useState(null);
+
+ useEffect(() => {
+  // Récupérer le rôle de l'utilisateur depuis le localStorage
+  const userRole = localStorage.getItem("userRole");
+  setRole(userRole);
+ }, []);
+
  return (
   <ul className="flex justify-center gap-x-8 flex-grow">
    <li>
@@ -50,18 +60,20 @@ export default function NavBar({ changePage, currentPage, onLogout, role }) {
     </button>
    </li>
 
-   <li>
-    <button
-     onClick={() => changePage("AdminDashboard")}
-     className={`text-white px-4 py-2 rounded transform transition-transform duration-300 ease-in-out ${
-      currentPage === "AdminDashboard"
-       ? "scale-110 bg-yellow-500 bg-opacity-20"
-       : "hover:scale-105 hover:bg-yellow-500 hover:bg-opacity-20"
-     }`}
-    >
-     Admin Dashboard
-    </button>
-   </li>
+   {role === "ADMIN" && (
+    <li>
+     <button
+      onClick={() => changePage("AdminDashboard")}
+      className={`text-white px-4 py-2 rounded transform transition-transform duration-300 ease-in-out ${
+       currentPage === "AdminDashboard"
+        ? "scale-110 bg-yellow-500 bg-opacity-20"
+        : "hover:scale-105 hover:bg-yellow-500 hover:bg-opacity-20"
+      }`}
+     >
+      Admin Dashboard
+     </button>
+    </li>
+   )}
 
    <li>
     <button
