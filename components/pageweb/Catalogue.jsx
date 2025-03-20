@@ -1,5 +1,5 @@
-// components/pageweb/Catalogue.jsx
 "use client";
+
 import React, { useEffect, useState } from "react";
 import BookList from "@/components/pageweb/BookList.jsx";
 import SearchBar from "@/components/pageweb/buttons/SearchBar.jsx"; // Importation du composant de recherche
