@@ -1,6 +1,6 @@
 // controllers/userController.js
 import userModel from "../models/user.js"; // Utilisation de l'import ES6
-import jwt from "jsonwebtoken"; // Importation de jsonwebtoken pour générer un token
+//import jwt from "jsonwebtoken"; // Importation de jsonwebtoken pour générer un token
 
 // Inscription d'un utilisateur avec une adresse
 export const registerUser = async (req, res) => {
@@ -70,8 +70,12 @@ export const loginUser = async (req, res) => {
   const user = await userModel.findUserByEmail(email);
 
   console.log(`Utilisateur connecté avec succès: ${user.username}`);
-  // Renvoi du token au client
-  res.status(200).json({ token });
+
+  // Ici, nous renvoyons les données utilisateur, dont l'ID
+  return res.status(200).json({
+   message: "Connexion réussie",
+   userId: user.id, // Retourne l'ID de l'utilisateur dans la réponse
+  });
  } catch (error) {
   console.error("Erreur lors de la connexion:", error);
   res.status(500).json({ error: "Erreur lors de la connexion" });

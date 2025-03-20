@@ -39,6 +39,7 @@ export const getBookById = async (req, res) => {
  }
 };
 
+//controller
 // Fonction pour ajouter un livre
 export const addBook = async (req, res) => {
  const { title, author, description, stock, genre, isAvailable } = req.body; // Ajouter genre et isAvailable

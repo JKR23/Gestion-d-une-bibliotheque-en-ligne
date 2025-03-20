@@ -16,6 +16,8 @@ export default {
     footerText: "#d1d5db", // Gris clair pour le texte
     borderColor: "#1f2937", // Gris foncé pour les bordures
     darkPurple: "#4B0082", // Mauve très foncé
+    reservationButtonBg: "#111832",
+    survolButtonBg: "#111841",
    },
   },
  },

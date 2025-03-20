@@ -6,7 +6,7 @@ export default function Contacts() {
   <div
    className="flex justify-center items-center min-h-screen bg-cover bg-center"
    style={{
-    backgroundImage: "url('/images/backGrnd.webp')", // L'image utilisée comme fond
+    backgroundImage: "url('/images/phot_bib.jpg')", // L'image utilisée comme fond
    }}
   >
    <Contact />

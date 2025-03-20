@@ -13,7 +13,7 @@ import {
 router.get("/", getBooks);
 // URL : GET http://localhost:5000/api/books
 
-// Route pour rechercher des livres par titre
+// Route pour rechercher des livres par titre/auteur/genre
 router.get("/search", searchBooks);
 // URL : GET http://localhost:5000/api/books/search
 

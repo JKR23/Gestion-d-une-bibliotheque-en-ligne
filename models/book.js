@@ -1,6 +1,7 @@
 //models/book.js
 const prisma = require("../prismaClient"); // Import du client Prisma
 
+//model
 // Fonction pour ajouter un livre
 const addBook = async (
  title,

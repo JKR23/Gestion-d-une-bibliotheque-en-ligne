@@ -1,49 +1,50 @@
-// app/layout.js
 "use client";
-
-import { useState } from "react";
-import Header from "@/components/Header/Header.jsx"; // Importation du Header
-import Footer from "@/components/Footer/Footer.jsx"; // Importation du Footer
-import Home from "@/app/page.jsx"; // Page d'accueil
-import Catalogue from "@/app/catalogue/page.jsx"; // Page catalogue
-import Contact from "@/app/contact/page"; // Page contact
-import Deconnexion from "@/app/deconnexion/page"; // Page deconnexion
-import "./globals.css"; // Import des styles globaux
+import { useState, useEffect } from "react";
+import Footer from "@/components/Footer/Footer";
+import WelcomePage from "@/components/pageweb/Accueil/WelcomePage";
+import PageApresConnexionDeUtilisateur from "@/app/page";
+import "./globals.css";
 
 export default function Layout({ children }) {
- // État pour savoir quelle page est actuellement affichée
- const [page, setPage] = useState("accueil");
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
- // Fonction pour changer de page
- const changePage = (newPage) => {
-  setPage(newPage);
- };
+    useEffect(() => {
+        console.log(
+            "Vérification de l'état de connexion dans le localStorage..."
+        );
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
 
- // Fonction pour rendre la page actuelle
- const renderPage = () => {
-  switch (page) {
-   case "accueil":
-    return <Home />;
-   case "catalogue":
-    return <Catalogue />;
-   case "contact":
-    return <Contact />;
-   case "deconnexion":
-    return <Deconnexion />;
-   default:
-    return <Home />;
-  }
- };
+        if (isLoggedIn === "true") {
+            console.log("Utilisateur est connecté, mise à jour de l'état...");
+            setIsLoggedIn(true);
+        } else {
+            console.log("Utilisateur n'est pas connecté.");
+        }
+    }, []);
 
- return (
-  <html lang="fr">
-   <body className="p-0 m-0">
-    <Header changePage={changePage} currentPage={page} />{" "}
-    {/* Passer la fonction et l'état à Header */}
-    <main className="min-h-screen pt-0">{renderPage()}</main>{" "}
-    {/* Afficher la page active */}
-    <Footer />
-   </body>
-  </html>
- );
+    useEffect(() => {
+        console.log("État de connexion mis à jour :", isLoggedIn);
+    }, [isLoggedIn]);
+
+    return (
+        <html lang="fr">
+            <body className="p-0 m-0 flex flex-col min-h-screen">
+                <main className="flex-grow">
+                    {isLoggedIn ? (
+                        <PageApresConnexionDeUtilisateur />
+                    ) : (
+                        <WelcomePage
+                            onLogin={() => {
+                                console.log(
+                                    "Utilisateur s'est connecté, mise à jour de l'état..."
+                                );
+                                setIsLoggedIn(true);
+                            }}
+                        />
+                    )}
+                </main>
+                <Footer />
+            </body>
+        </html>
+    );
 }

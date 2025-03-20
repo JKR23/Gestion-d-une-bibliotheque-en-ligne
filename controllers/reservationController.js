@@ -9,41 +9,53 @@ const prisma = new PrismaClient();
 // Créer une réservation
 export const createReservation = async (req, res) => {
  try {
+  // Log des paramètres de la requête pour vérifier que nous recevons bien les données
   const { bookId, userId, reservedUntil } = req.body;
-
-  // Log des paramètres pour vérifier la réception de la requête
   console.log("Données de réservation reçues :", req.body);
 
-  // Vérification de la date
+  // Vérification si la date de réservation est fournie
   if (!reservedUntil) {
+   console.log("Erreur : La date de réservation n'a pas été fournie.");
    return res
     .status(400)
     .json({ error: "La date de réservation est requise." });
   }
 
   // Vérification du livre et de son stock
+  console.log(`Recherche du livre avec l'ID: ${bookId}`);
   const book = await prisma.book.findUnique({
    where: { id: bookId },
   });
 
   // Si le livre n'existe pas ou si le stock est à zéro
-  if (!book || book.stock <= 0) {
+  if (!book) {
+   console.log(`Erreur : Le livre avec l'ID ${bookId} n'existe pas.`);
+   return res
+    .status(400)
+    .json({ error: "Le livre n'existe pas pour réservation." });
+  }
+  if (book.stock <= 0) {
+   console.log(
+    `Erreur : Le livre avec l'ID ${bookId} est en rupture de stock.`
+   );
    return res
     .status(400)
     .json({ error: "Le livre n'est plus disponible pour réservation." });
   }
 
-  // Appeler la fonction de création de la réservation dans le modèle
+  // Appel à la fonction pour créer la réservation dans le modèle
+  console.log(`Création de la réservation pour l'utilisateur ID: ${userId}`);
   const reservation = await reservationModel.createReservation(
    userId,
    bookId,
    reservedUntil
   );
 
-  // Log de la réponse
+  // Log de la réponse de la création de la réservation
   console.log("Réservation créée :", reservation);
 
-  // Mettre à jour le stock du livre
+  // Mise à jour du stock du livre
+  console.log(`Mise à jour du stock pour le livre ID: ${bookId}`);
   await prisma.book.update({
    where: { id: bookId },
    data: {
@@ -51,6 +63,7 @@ export const createReservation = async (req, res) => {
    },
   });
 
+  // Réponse avec la réservation créée
   res.status(201).json(reservation);
  } catch (error) {
   console.error(
