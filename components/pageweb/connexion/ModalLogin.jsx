@@ -38,21 +38,20 @@ export default function ModalLogin({ isOpen, closeModal }) {
     console.log("Connexion réussie, mise à jour du localStorage...");
     const data = await response.json();
 
-    // Assure-toi que tu accèdes bien à l'ID et au rôle de l'utilisateur
     if (data.userId && data.role) {
      localStorage.setItem("isLoggedIn", "true");
-     localStorage.setItem("userId", data.userId); // Stocke le userId dans localStorage
-     localStorage.setItem("userRole", data.role); // Stocke le rôle dans localStorage
+     localStorage.setItem("userId", data.userId);
+     localStorage.setItem("userRole", data.role);
      console.log("Connexion réussie, iduser : " + data.userId);
      closeModal();
-     router.push("/accueil"); // Rediriger vers la page principale
+     router.push("/accueil");
     } else {
      console.log("Erreur : ID utilisateur ou rôle manquant.");
     }
    } else {
     const errorData = await response.json();
-    console.error("Erreur de connexion :", errorData.message);
-    setErrorMessage(errorData.message);
+    console.error("Erreur de connexion :", errorData.error);
+    setErrorMessage(errorData.error); // Afficher le message d'erreur du backend
    }
   } catch (error) {
    console.error("Erreur lors de la connexion :", error);

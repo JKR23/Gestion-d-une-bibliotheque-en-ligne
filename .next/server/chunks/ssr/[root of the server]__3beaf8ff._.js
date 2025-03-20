@@ -537,21 +537,20 @@ function ModalLogin({ isOpen, closeModal }) {
             if (response.ok) {
                 console.log("Connexion réussie, mise à jour du localStorage...");
                 const data = await response.json();
-                // Assure-toi que tu accèdes bien à l'ID et au rôle de l'utilisateur
                 if (data.userId && data.role) {
                     localStorage.setItem("isLoggedIn", "true");
-                    localStorage.setItem("userId", data.userId); // Stocke le userId dans localStorage
-                    localStorage.setItem("userRole", data.role); // Stocke le rôle dans localStorage
+                    localStorage.setItem("userId", data.userId);
+                    localStorage.setItem("userRole", data.role);
                     console.log("Connexion réussie, iduser : " + data.userId);
                     closeModal();
-                    router.push("/accueil"); // Rediriger vers la page principale
+                    router.push("/accueil");
                 } else {
                     console.log("Erreur : ID utilisateur ou rôle manquant.");
                 }
             } else {
                 const errorData = await response.json();
-                console.error("Erreur de connexion :", errorData.message);
-                setErrorMessage(errorData.message);
+                console.error("Erreur de connexion :", errorData.error);
+                setErrorMessage(errorData.error); // Afficher le message d'erreur du backend
             }
         } catch (error) {
             console.error("Erreur lors de la connexion :", error);
@@ -571,12 +570,12 @@ function ModalLogin({ isOpen, closeModal }) {
                         children: "Connexion"
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                        lineNumber: 69,
+                        lineNumber: 68,
                         columnNumber: 6
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                    lineNumber: 68,
+                    lineNumber: 67,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -594,7 +593,7 @@ function ModalLogin({ isOpen, closeModal }) {
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                                            lineNumber: 74,
+                                            lineNumber: 73,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -607,13 +606,13 @@ function ModalLogin({ isOpen, closeModal }) {
                                             onChange: handleChange
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                                            lineNumber: 77,
+                                            lineNumber: 76,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                                    lineNumber: 73,
+                                    lineNumber: 72,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -625,7 +624,7 @@ function ModalLogin({ isOpen, closeModal }) {
                                             children: "Mot de passe"
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                                            lineNumber: 88,
+                                            lineNumber: 87,
                                             columnNumber: 8
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -638,13 +637,13 @@ function ModalLogin({ isOpen, closeModal }) {
                                             onChange: handleChange
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                                            lineNumber: 91,
+                                            lineNumber: 90,
                                             columnNumber: 8
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 86,
                                     columnNumber: 7
                                 }, this),
                                 errorMessage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -652,7 +651,7 @@ function ModalLogin({ isOpen, closeModal }) {
                                     children: errorMessage
                                 }, void 0, false, {
                                     fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                                    lineNumber: 102,
+                                    lineNumber: 101,
                                     columnNumber: 8
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -661,13 +660,13 @@ function ModalLogin({ isOpen, closeModal }) {
                                     children: "Se connecter"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                                    lineNumber: 104,
+                                    lineNumber: 103,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                            lineNumber: 72,
+                            lineNumber: 71,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -676,24 +675,24 @@ function ModalLogin({ isOpen, closeModal }) {
                             children: "Fermer"
                         }, void 0, false, {
                             fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                            lineNumber: 111,
+                            lineNumber: 110,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-                    lineNumber: 71,
+                    lineNumber: 70,
                     columnNumber: 5
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-            lineNumber: 67,
+            lineNumber: 66,
             columnNumber: 4
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/pageweb/connexion/ModalLogin.jsx",
-        lineNumber: 66,
+        lineNumber: 65,
         columnNumber: 3
     }, this);
 }
