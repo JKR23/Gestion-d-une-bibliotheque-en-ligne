@@ -5,6 +5,7 @@
  "main": "server.js",
  "type": "module",
  "scripts": {
+  "prisma-generate": "prisma generate",
   "dev": "concurrently \"next dev -p 3000 --turbopack\" \"nodemon server.js\"",
   "build": "next build",
   "start": "next start",
