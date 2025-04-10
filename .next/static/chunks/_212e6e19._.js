@@ -56,6 +56,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
+"use client";
 ;
 function NavBar({ changePage, currentPage, onLogout }) {
     _s();
@@ -77,12 +78,12 @@ function NavBar({ changePage, currentPage, onLogout }) {
                     children: "Accueil"
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 15,
+                    lineNumber: 17,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -92,12 +93,12 @@ function NavBar({ changePage, currentPage, onLogout }) {
                     children: "Catalogue"
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 27,
+                    lineNumber: 29,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 26,
+                lineNumber: 28,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -107,12 +108,12 @@ function NavBar({ changePage, currentPage, onLogout }) {
                     children: "Réservation"
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 39,
+                    lineNumber: 41,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 38,
+                lineNumber: 40,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -122,12 +123,12 @@ function NavBar({ changePage, currentPage, onLogout }) {
                     children: "Contact"
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 51,
+                    lineNumber: 53,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 50,
+                lineNumber: 52,
                 columnNumber: 4
             }, this),
             role === "ADMIN" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -137,12 +138,12 @@ function NavBar({ changePage, currentPage, onLogout }) {
                     children: "Admin Dashboard"
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 65,
+                    lineNumber: 67,
                     columnNumber: 6
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 64,
+                lineNumber: 66,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -152,18 +153,18 @@ function NavBar({ changePage, currentPage, onLogout }) {
                     children: "Déconnexion"
                 }, void 0, false, {
                     fileName: "[project]/components/Header/NavBar.jsx",
-                    lineNumber: 79,
+                    lineNumber: 81,
                     columnNumber: 5
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Header/NavBar.jsx",
-                lineNumber: 78,
+                lineNumber: 80,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Header/NavBar.jsx",
-        lineNumber: 13,
+        lineNumber: 15,
         columnNumber: 3
     }, this);
 }
@@ -1743,6 +1744,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
+"use client";
 ;
 function SearchBar({ onSearch }) {
     _s();
@@ -1764,7 +1766,7 @@ function SearchBar({ onSearch }) {
                 onChange: (e)=>setSearchText(e.target.value)
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/buttons/SearchBar.jsx",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1778,7 +1780,7 @@ function SearchBar({ onSearch }) {
                         children: "Titre"
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/buttons/SearchBar.jsx",
-                        lineNumber: 27,
+                        lineNumber: 29,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1786,7 +1788,7 @@ function SearchBar({ onSearch }) {
                         children: "Auteur"
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/buttons/SearchBar.jsx",
-                        lineNumber: 28,
+                        lineNumber: 30,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1794,13 +1796,13 @@ function SearchBar({ onSearch }) {
                         children: "Genre"
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/buttons/SearchBar.jsx",
-                        lineNumber: 29,
+                        lineNumber: 31,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pageweb/buttons/SearchBar.jsx",
-                lineNumber: 22,
+                lineNumber: 24,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1809,13 +1811,13 @@ function SearchBar({ onSearch }) {
                 children: "Rechercher"
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/buttons/SearchBar.jsx",
-                lineNumber: 31,
+                lineNumber: 33,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pageweb/buttons/SearchBar.jsx",
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 3
     }, this);
 }
@@ -2434,6 +2436,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Boo
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$buttons$2f$SearchBar$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/pageweb/buttons/SearchBar.jsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
+"use client";
 ;
 ;
 ;
@@ -2478,7 +2481,7 @@ function Reservation() {
             children: "Chargement..."
         }, void 0, false, {
             fileName: "[project]/components/pageweb/Reservation.jsx",
-            lineNumber: 51,
+            lineNumber: 53,
             columnNumber: 10
         }, this);
     }
@@ -2492,7 +2495,7 @@ function Reservation() {
                         children: "Réservations"
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/Reservation.jsx",
-                        lineNumber: 57,
+                        lineNumber: 59,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2501,37 +2504,37 @@ function Reservation() {
                             onSearch: handleSearch
                         }, void 0, false, {
                             fileName: "[project]/components/pageweb/Reservation.jsx",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 6
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/Reservation.jsx",
-                        lineNumber: 58,
+                        lineNumber: 60,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pageweb/Reservation.jsx",
-                lineNumber: 56,
+                lineNumber: 58,
                 columnNumber: 4
             }, this),
             filteredReservations.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: "Aucune réservation trouvée."
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Reservation.jsx",
-                lineNumber: 64,
+                lineNumber: 66,
                 columnNumber: 5
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$BookListReservation$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 reservations: filteredReservations
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Reservation.jsx",
-                lineNumber: 66,
+                lineNumber: 68,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pageweb/Reservation.jsx",
-        lineNumber: 55,
+        lineNumber: 57,
         columnNumber: 3
     }, this);
 }
@@ -3249,7 +3252,7 @@ function AddUserForm() {
     // Soumission du formulaire
     const onSubmit = async (data)=>{
         try {
-            const response = await fetch("http://localhost:5000/api/users", {
+            const response = await fetch("http://localhost:5000/api/users/register", {
                 method: "POST",
                 credentials: "include",
                 headers: {
@@ -3276,7 +3279,7 @@ function AddUserForm() {
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                 lineNumber: 33,
-                columnNumber: 13
+                columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                 onSubmit: handleSubmit(onSubmit),
@@ -3291,7 +3294,7 @@ function AddUserForm() {
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                                 lineNumber: 41,
-                                columnNumber: 21
+                                columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 ...register("firstName", {
@@ -3302,13 +3305,13 @@ function AddUserForm() {
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                                 lineNumber: 42,
-                                columnNumber: 21
+                                columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                         lineNumber: 40,
-                        columnNumber: 17
+                        columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-4",
@@ -3319,7 +3322,7 @@ function AddUserForm() {
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                                 lineNumber: 50,
-                                columnNumber: 21
+                                columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 ...register("lastName", {
@@ -3330,13 +3333,13 @@ function AddUserForm() {
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                                 lineNumber: 51,
-                                columnNumber: 21
+                                columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                         lineNumber: 49,
-                        columnNumber: 17
+                        columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-4",
@@ -3347,7 +3350,7 @@ function AddUserForm() {
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                                 lineNumber: 59,
-                                columnNumber: 21
+                                columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 ...register("email", {
@@ -3359,13 +3362,13 @@ function AddUserForm() {
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                                 lineNumber: 60,
-                                columnNumber: 21
+                                columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                         lineNumber: 58,
-                        columnNumber: 17
+                        columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-4",
@@ -3376,7 +3379,7 @@ function AddUserForm() {
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                                 lineNumber: 69,
-                                columnNumber: 21
+                                columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 ...register("password", {
@@ -3387,14 +3390,14 @@ function AddUserForm() {
                                 className: "w-full border border-gray-300 p-2 rounded"
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
-                                lineNumber: 72,
-                                columnNumber: 21
+                                lineNumber: 70,
+                                columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                         lineNumber: 68,
-                        columnNumber: 17
+                        columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-4",
@@ -3404,8 +3407,8 @@ function AddUserForm() {
                                 children: "Rôle :"
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
-                                lineNumber: 81,
-                                columnNumber: 21
+                                lineNumber: 79,
+                                columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 ...register("role", {
@@ -3415,14 +3418,14 @@ function AddUserForm() {
                                 className: "w-full border border-gray-300 p-2 rounded"
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
-                                lineNumber: 82,
-                                columnNumber: 21
+                                lineNumber: 80,
+                                columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
-                        lineNumber: 80,
-                        columnNumber: 17
+                        lineNumber: 78,
+                        columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "submit",
@@ -3430,20 +3433,20 @@ function AddUserForm() {
                         children: "Ajouter l’Utilisateur"
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
-                        lineNumber: 89,
-                        columnNumber: 17
+                        lineNumber: 87,
+                        columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
                 lineNumber: 36,
-                columnNumber: 13
+                columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pageweb/Admin/AddUserForm.jsx",
         lineNumber: 32,
-        columnNumber: 9
+        columnNumber: 3
     }, this);
 }
 _s(AddUserForm, "Tv3ax+IYeS+IUhXACHCvYwCyM94=", false, function() {
@@ -3561,7 +3564,7 @@ const AdminDashboard = ()=>{
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                 lineNumber: 84,
-                columnNumber: 13
+                columnNumber: 4
             }, this),
             activeSection === null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
@@ -3572,7 +3575,7 @@ const AdminDashboard = ()=>{
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                         lineNumber: 88,
-                        columnNumber: 21
+                        columnNumber: 6
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Card, {
                         title: "Ajouter un Utilisateur",
@@ -3580,7 +3583,7 @@ const AdminDashboard = ()=>{
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                         lineNumber: 92,
-                        columnNumber: 21
+                        columnNumber: 6
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Card, {
                         title: "Gérer les Livres",
@@ -3588,7 +3591,7 @@ const AdminDashboard = ()=>{
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                         lineNumber: 96,
-                        columnNumber: 21
+                        columnNumber: 6
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Card, {
                         title: "Gérer les Utilisateurs",
@@ -3596,13 +3599,13 @@ const AdminDashboard = ()=>{
                     }, void 0, false, {
                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                         lineNumber: 100,
-                        columnNumber: 21
+                        columnNumber: 6
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                 lineNumber: 87,
-                columnNumber: 17
+                columnNumber: 5
             }, this),
             activeSection === "addBook" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
                 title: "Ajout d’un Livre",
@@ -3610,12 +3613,12 @@ const AdminDashboard = ()=>{
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Admin$2f$AddBookForm$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                     lineNumber: 109,
-                    columnNumber: 21
+                    columnNumber: 6
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                 lineNumber: 108,
-                columnNumber: 17
+                columnNumber: 5
             }, this),
             activeSection === "addUser" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
                 title: "Ajout d’un Utilisateur",
@@ -3623,12 +3626,12 @@ const AdminDashboard = ()=>{
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$pageweb$2f$Admin$2f$AddUserForm$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                     lineNumber: 115,
-                    columnNumber: 21
+                    columnNumber: 6
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                 lineNumber: 114,
-                columnNumber: 17
+                columnNumber: 5
             }, this),
             activeSection === "manageBooks" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
                 title: "Gestion des Livres",
@@ -3647,7 +3650,7 @@ const AdminDashboard = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                             lineNumber: 124,
-                                            columnNumber: 33
+                                            columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             className: "border p-2",
@@ -3655,7 +3658,7 @@ const AdminDashboard = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                             lineNumber: 125,
-                                            columnNumber: 33
+                                            columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             className: "border p-2",
@@ -3663,18 +3666,18 @@ const AdminDashboard = ()=>{
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                             lineNumber: 126,
-                                            columnNumber: 33
+                                            columnNumber: 9
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                     lineNumber: 123,
-                                    columnNumber: 29
+                                    columnNumber: 8
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                 lineNumber: 122,
-                                columnNumber: 25
+                                columnNumber: 7
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
                                 children: books.map((book)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -3685,7 +3688,7 @@ const AdminDashboard = ()=>{
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                                 lineNumber: 132,
-                                                columnNumber: 37
+                                                columnNumber: 10
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 className: "border p-2",
@@ -3693,7 +3696,7 @@ const AdminDashboard = ()=>{
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                                 lineNumber: 133,
-                                                columnNumber: 37
+                                                columnNumber: 10
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 className: "border p-2 space-x-2",
@@ -3704,8 +3707,8 @@ const AdminDashboard = ()=>{
                                                         children: "Modifier"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                        lineNumber: 137,
-                                                        columnNumber: 41
+                                                        lineNumber: 135,
+                                                        columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         onClick: ()=>deleteBook(book._id),
@@ -3713,31 +3716,31 @@ const AdminDashboard = ()=>{
                                                         children: "Supprimer"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                        lineNumber: 143,
-                                                        columnNumber: 41
+                                                        lineNumber: 141,
+                                                        columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                lineNumber: 136,
-                                                columnNumber: 37
+                                                lineNumber: 134,
+                                                columnNumber: 10
                                             }, this)
                                         ]
                                     }, book._id, true, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                         lineNumber: 131,
-                                        columnNumber: 33
+                                        columnNumber: 9
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                                 lineNumber: 129,
-                                columnNumber: 25
+                                columnNumber: 7
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                         lineNumber: 121,
-                        columnNumber: 21
+                        columnNumber: 6
                     }, this),
                     editBook && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-6 p-4 border bg-gray-50",
@@ -3747,8 +3750,8 @@ const AdminDashboard = ()=>{
                                 children: "Modifier le Livre"
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                lineNumber: 157,
-                                columnNumber: 29
+                                lineNumber: 155,
+                                columnNumber: 8
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                 onSubmit: (e)=>{
@@ -3765,8 +3768,8 @@ const AdminDashboard = ()=>{
                                         className: "border p-2 mb-2 w-full"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 166,
-                                        columnNumber: 33
+                                        lineNumber: 162,
+                                        columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         value: editBook.author,
@@ -3777,8 +3780,8 @@ const AdminDashboard = ()=>{
                                         className: "border p-2 mb-2 w-full"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 176,
-                                        columnNumber: 33
+                                        lineNumber: 172,
+                                        columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "submit",
@@ -3786,26 +3789,26 @@ const AdminDashboard = ()=>{
                                         children: "Enregistrer"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 186,
-                                        columnNumber: 33
+                                        lineNumber: 182,
+                                        columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                lineNumber: 160,
-                                columnNumber: 29
+                                lineNumber: 156,
+                                columnNumber: 8
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                        lineNumber: 156,
-                        columnNumber: 25
+                        lineNumber: 154,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
                 lineNumber: 120,
-                columnNumber: 17
+                columnNumber: 5
             }, this),
             activeSection === "manageUsers" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Section, {
                 title: "Gestion des Utilisateurs",
@@ -3823,43 +3826,43 @@ const AdminDashboard = ()=>{
                                             children: "Nom"
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                            lineNumber: 203,
-                                            columnNumber: 33
+                                            lineNumber: 199,
+                                            columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             className: "border p-2",
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                            lineNumber: 204,
-                                            columnNumber: 33
+                                            lineNumber: 200,
+                                            columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             className: "border p-2",
                                             children: "Rôle"
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                            lineNumber: 205,
-                                            columnNumber: 33
+                                            lineNumber: 201,
+                                            columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             className: "border p-2",
                                             children: "Actions"
                                         }, void 0, false, {
                                             fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                            lineNumber: 206,
-                                            columnNumber: 33
+                                            lineNumber: 202,
+                                            columnNumber: 9
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                    lineNumber: 202,
-                                    columnNumber: 29
+                                    lineNumber: 198,
+                                    columnNumber: 8
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                lineNumber: 201,
-                                columnNumber: 25
+                                lineNumber: 197,
+                                columnNumber: 7
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
                                 children: users.map((user)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -3873,24 +3876,24 @@ const AdminDashboard = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                lineNumber: 212,
-                                                columnNumber: 37
+                                                lineNumber: 208,
+                                                columnNumber: 10
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 className: "border p-2",
                                                 children: user.email
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                lineNumber: 215,
-                                                columnNumber: 37
+                                                lineNumber: 211,
+                                                columnNumber: 10
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 className: "border p-2",
                                                 children: user.role
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                lineNumber: 216,
-                                                columnNumber: 37
+                                                lineNumber: 212,
+                                                columnNumber: 10
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 className: "border p-2 space-x-2",
@@ -3901,8 +3904,8 @@ const AdminDashboard = ()=>{
                                                         children: "Modifier"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                        lineNumber: 218,
-                                                        columnNumber: 41
+                                                        lineNumber: 214,
+                                                        columnNumber: 11
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         onClick: ()=>deleteUser(user._id),
@@ -3910,31 +3913,31 @@ const AdminDashboard = ()=>{
                                                         children: "Supprimer"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                        lineNumber: 224,
-                                                        columnNumber: 41
+                                                        lineNumber: 220,
+                                                        columnNumber: 11
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                                lineNumber: 217,
-                                                columnNumber: 37
+                                                lineNumber: 213,
+                                                columnNumber: 10
                                             }, this)
                                         ]
                                     }, user._id, true, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 211,
-                                        columnNumber: 33
+                                        lineNumber: 207,
+                                        columnNumber: 9
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                lineNumber: 209,
-                                columnNumber: 25
+                                lineNumber: 205,
+                                columnNumber: 7
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                        lineNumber: 200,
-                        columnNumber: 21
+                        lineNumber: 196,
+                        columnNumber: 6
                     }, this),
                     editUser && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-6 p-4 border bg-gray-50",
@@ -3944,8 +3947,8 @@ const AdminDashboard = ()=>{
                                 children: "Modifier l’Utilisateur"
                             }, void 0, false, {
                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                lineNumber: 238,
-                                columnNumber: 29
+                                lineNumber: 234,
+                                columnNumber: 8
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                 onSubmit: (e)=>{
@@ -3962,8 +3965,8 @@ const AdminDashboard = ()=>{
                                         className: "border p-2 mb-2 w-full"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 247,
-                                        columnNumber: 33
+                                        lineNumber: 241,
+                                        columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         value: editUser.lastName,
@@ -3974,8 +3977,8 @@ const AdminDashboard = ()=>{
                                         className: "border p-2 mb-2 w-full"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 257,
-                                        columnNumber: 33
+                                        lineNumber: 251,
+                                        columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         value: editUser.email,
@@ -3986,8 +3989,8 @@ const AdminDashboard = ()=>{
                                         className: "border p-2 mb-2 w-full"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 267,
-                                        columnNumber: 33
+                                        lineNumber: 261,
+                                        columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         value: editUser.role,
@@ -3998,8 +4001,8 @@ const AdminDashboard = ()=>{
                                         className: "border p-2 mb-2 w-full"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 277,
-                                        columnNumber: 33
+                                        lineNumber: 271,
+                                        columnNumber: 9
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "submit",
@@ -4007,32 +4010,32 @@ const AdminDashboard = ()=>{
                                         children: "Enregistrer"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                        lineNumber: 287,
-                                        columnNumber: 33
+                                        lineNumber: 281,
+                                        columnNumber: 9
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                                lineNumber: 241,
-                                columnNumber: 29
+                                lineNumber: 235,
+                                columnNumber: 8
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                        lineNumber: 237,
-                        columnNumber: 25
+                        lineNumber: 233,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                lineNumber: 199,
-                columnNumber: 17
+                lineNumber: 195,
+                columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
         lineNumber: 83,
-        columnNumber: 9
+        columnNumber: 3
     }, this);
 };
 _s(AdminDashboard, "eabqc7zHMtVklpBRyPHq9l1nNLk=");
@@ -4046,21 +4049,21 @@ const Card = ({ title, onClick })=>/*#__PURE__*/ (0, __TURBOPACK__imported__modu
                 children: title
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                lineNumber: 307,
-                columnNumber: 9
+                lineNumber: 301,
+                columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: "Cliquer ici pour accéder."
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                lineNumber: 308,
-                columnNumber: 9
+                lineNumber: 302,
+                columnNumber: 3
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-        lineNumber: 303,
-        columnNumber: 5
+        lineNumber: 297,
+        columnNumber: 2
     }, this);
 _c1 = Card;
 const Section = ({ title, children, onBack })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4071,23 +4074,23 @@ const Section = ({ title, children, onBack })=>/*#__PURE__*/ (0, __TURBOPACK__im
                 children: "← Retour"
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                lineNumber: 314,
-                columnNumber: 9
+                lineNumber: 308,
+                columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                 className: "text-xl font-bold mb-4",
                 children: title
             }, void 0, false, {
                 fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-                lineNumber: 320,
-                columnNumber: 9
+                lineNumber: 314,
+                columnNumber: 3
             }, this),
             children
         ]
     }, void 0, true, {
         fileName: "[project]/components/pageweb/Admin/AdminDashboard.jsx",
-        lineNumber: 313,
-        columnNumber: 5
+        lineNumber: 307,
+        columnNumber: 2
     }, this);
 _c2 = Section;
 const __TURBOPACK__default__export__ = AdminDashboard;

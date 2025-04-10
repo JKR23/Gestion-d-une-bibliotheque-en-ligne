@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import BookListReservation from "@/components/pageweb/BookListReservation.jsx";
 import SearchBar from "@/components/pageweb/buttons/SearchBar.jsx";
