@@ -5,9 +5,8 @@
  "main": "server.js",
  "type": "module",
  "scripts": {
-  "prisma-generate": "prisma generate",
   "dev": "concurrently \"next dev -p 3000 --turbopack\" \"nodemon server.js\"",
-  "build": "next build",
+  "build": "next build && npx prisma generate",
   "start": "next start",
   "lint": "next lint"
  },
