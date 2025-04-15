@@ -8,12 +8,17 @@
   "dev": "concurrently \"next dev -p 3000 --turbopack\" \"nodemon server.js\"",
   "build": "next build && npx prisma generate",
   "start": "next start",
-  "lint": "next lint"
+  "lint": "next lint",
+  "export": "next export"
  },
  "author": "Ricarka Kuntuala",
  "license": "UNLICENSED",
  "dependencies": {
+  "@capacitor/android": "^7.2.0",
+  "@capacitor/cli": "^7.2.0",
+  "@capacitor/core": "^7.2.0",
   "@prisma/client": "^6.4.0",
+  "axios": "^1.8.4",
   "bcryptjs": "^3.0.2",
   "compression": "^1.7.5",
   "cors": "^2.8.5",
@@ -26,6 +31,7 @@
   "react": "^19.0.0",
   "react-dom": "^19.0.0",
   "react-hook-form": "^7.54.2",
+  "react-icons": "^5.5.0",
   "tailwind-merge": "^2.6.0"
  },
  "devDependencies": {

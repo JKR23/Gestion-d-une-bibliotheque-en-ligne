@@ -1,15 +1,28 @@
-// components/QuickLink
-import NavBar from "../Header/NavBar.jsx";
-
 export default function QuickLink() {
  return (
-  <div>
+  <div className="text-center md:text-left">
    <h3 className="text-lg font-semibold mb-4">Liens rapides</h3>
-   <ul className=" gap-x-8 flex-grow">
-    <li>Accueil</li>
-    <li>Catalogue</li>
-    <li>Contact</li>
-    <li>Deconnexion</li>
+   <ul className="space-y-2 text-gray-400">
+    <li>
+     <a href="#" className="hover:text-white transition-colors">
+      Accueil
+     </a>
+    </li>
+    <li>
+     <a href="#" className="hover:text-white transition-colors">
+      Catalogue
+     </a>
+    </li>
+    <li>
+     <a href="#" className="hover:text-white transition-colors">
+      Contact
+     </a>
+    </li>
+    <li>
+     <a href="#" className="hover:text-white transition-colors">
+      Déconnexion
+     </a>
+    </li>
    </ul>
   </div>
  );

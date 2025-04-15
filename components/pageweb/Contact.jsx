@@ -12,26 +12,28 @@ export default function Contact() {
 
  const handleChange = (e) => {
   const { name, value } = e.target;
-  setFormData({
-   ...formData,
-   [name]: value,
-  });
+  setFormData({ ...formData, [name]: value });
  };
 
  const handleSubmit = (e) => {
   e.preventDefault();
-  // Ajoutez ici la logique pour envoyer les données du formulaire, par exemple via une API
   console.log("Formulaire soumis:", formData);
  };
 
  return (
-  <div className="min-h-screen flex items-center justify-center">
-   <div className="flex w-full max-w-6xl rounded-lg overflow-hidden shadow-lg">
-    <div className="w-1/2 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 flex items-center justify-center">
-     <h2 className="text-4xl font-bold text-white">Contactez-nous</h2>
+  <div className="min-h-screen flex items-center justify-center p-4">
+   <div className="flex flex-col md:flex-row w-full max-w-6xl rounded-lg overflow-hidden shadow-lg">
+    {/* Partie gauche - Titre */}
+    <div className="w-full md:w-1/2 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 flex items-center justify-center p-8">
+     <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+      Contactez-nous
+     </h2>
     </div>
-    <div className="w-1/2 bg-white p-8">
+
+    {/* Partie droite - Formulaire */}
+    <div className="w-full md:w-1/2 bg-white p-6 sm:p-8">
      <form onSubmit={handleSubmit}>
+      {/* Nom */}
       <div className="mb-4">
        <label
         className="block text-gray-700 text-sm font-bold mb-2"
@@ -45,10 +47,12 @@ export default function Contact() {
         name="name"
         value={formData.name}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
         required
        />
       </div>
+
+      {/* Email */}
       <div className="mb-4">
        <label
         className="block text-gray-700 text-sm font-bold mb-2"
@@ -62,10 +66,12 @@ export default function Contact() {
         name="email"
         value={formData.email}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
         required
        />
       </div>
+
+      {/* Sujet */}
       <div className="mb-4">
        <label
         className="block text-gray-700 text-sm font-bold mb-2"
@@ -79,10 +85,12 @@ export default function Contact() {
         name="subject"
         value={formData.subject}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
         required
        />
       </div>
+
+      {/* Message */}
       <div className="mb-4">
        <label
         className="block text-gray-700 text-sm font-bold mb-2"
@@ -95,10 +103,12 @@ export default function Contact() {
         name="message"
         value={formData.message}
         onChange={handleChange}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-24 resize-none"
+        className="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline h-24 resize-none"
         required
        ></textarea>
       </div>
+
+      {/* Bouton */}
       <div className="flex items-center justify-center">
        <button
         type="submit"

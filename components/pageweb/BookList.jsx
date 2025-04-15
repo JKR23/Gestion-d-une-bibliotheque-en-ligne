@@ -7,10 +7,10 @@ export default function BookList({ books }) {
  }
 
  return (
-  <div className="book-list">
+  <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
    {books.map((book) => (
-    <div key={book.id} className="book-card border p-4 mb-4 rounded shadow-md">
-     <h2 className="text-xl font-bold">{book.title}</h2>
+    <div key={book.id} className="border p-4 rounded shadow-md bg-white">
+     <h2 className="text-xl font-bold mb-2">{book.title}</h2>
      <p>
       <strong>Auteur:</strong> {book.author}
      </p>
@@ -24,8 +24,9 @@ export default function BookList({ books }) {
      <p>
       <strong>Disponible:</strong> {book.isAvailable ? "Oui" : "Non"}
      </p>
-     <ButtonDisplayFormDate bookId={book.id} userId={1} />{" "}
-     {/* Passer l'ID du livre et de l'utilisateur */}
+     <div className="mt-4">
+      <ButtonDisplayFormDate bookId={book.id} userId={1} />
+     </div>
     </div>
    ))}
   </div>

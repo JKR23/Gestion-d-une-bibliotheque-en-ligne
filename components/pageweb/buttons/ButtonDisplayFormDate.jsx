@@ -1,32 +1,26 @@
 "use client";
 
 import React, { useState } from "react";
-import FormDateButton from "@/components/pageweb/buttons/FormDate.jsx"; // Importation du FormDateButton
+import FormDateButton from "@/components/pageweb/buttons/FormDate.jsx";
 
 export default function ButtonDisplayFormDate({ bookId, userId }) {
- const [showForm, setShowForm] = useState(false); // State pour afficher/cacher le formulaire
-
- // Fonction qui gère l'annulation du formulaire
- const handleReserveCancel = () => {
-  setShowForm(false); // Masque le formulaire si l'utilisateur annule
- };
+ const [showForm, setShowForm] = useState(false);
 
  return (
   <div>
    <button
     onClick={() => setShowForm(true)}
-    className="bg-reservationButtonBg text-white py-2 px-4 rounded transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-survolButtonBg"
+    className="bg-reservationButtonBg text-white py-2 px-4 rounded transition hover:scale-105 hover:bg-survolButtonBg w-full sm:w-auto"
    >
     Réserver
    </button>
 
-   {/* Affichage du formulaire sous forme de modal (popup) */}
    {showForm && (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 px-4">
      <FormDateButton
       bookId={bookId}
       userId={userId}
-      onCancel={handleReserveCancel}
+      onCancel={() => setShowForm(false)}
      />
     </div>
    )}

@@ -11,7 +11,7 @@ export default function Reservation() {
 
  const fetchReservations = async () => {
   try {
-   const userId = localStorage.getItem("userId"); // Récupérer l'ID de l'utilisateur du localStorage
+   const userId = localStorage.getItem("userId");
    if (!userId) {
     console.error("Aucun utilisateur connecté !");
     return;
@@ -49,17 +49,13 @@ export default function Reservation() {
   fetchReservations();
  }, []);
 
- if (isLoading) {
-  return <div>Chargement...</div>;
- }
+ if (isLoading) return <div className="p-4">Chargement...</div>;
 
  return (
-  <div>
-   <div className="flex items-center justify-between mb-6">
-    <h1 className="text-3xl">Réservations</h1>
-    <div className="mt-6">
-     <SearchBar onSearch={handleSearch} />
-    </div>
+  <div className="p-4">
+   <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-6 gap-4">
+    <h1 className="text-2xl md:text-3xl font-bold">Réservations</h1>
+    <SearchBar onSearch={handleSearch} />
    </div>
 
    {filteredReservations.length === 0 ? (

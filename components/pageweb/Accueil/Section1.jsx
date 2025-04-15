@@ -5,7 +5,7 @@ export default function Section1() {
   <div className="relative w-full h-full">
    <Image
     src="/images/phot_bib.jpg"
-    alt="Description de l'image"
+    alt="Image de bibliothèque"
     className="object-cover"
     fill
     priority

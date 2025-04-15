@@ -17,17 +17,12 @@ export default function CancelReservationButton({ reservationId }) {
    );
 
    if (response.ok) {
-    const data = await response.json();
-    console.log("Réponse de l'annulation:", data);
     setCanceled(true);
     alert("L'annulation a réussi.");
    } else {
-    const errorData = await response.json();
-    console.error("Échec de l'annulation", errorData);
     alert("L'annulation a échoué.");
    }
-  } catch (error) {
-   console.error("Erreur lors de l'annulation", error);
+  } catch {
    alert("Erreur de connexion, veuillez réessayer.");
   } finally {
    setLoading(false);
@@ -38,9 +33,9 @@ export default function CancelReservationButton({ reservationId }) {
   <button
    onClick={handleCancel}
    disabled={loading || canceled}
-   className={`w-1/2 mt-2 py-2 px-4 rounded ${
+   className={`w-full sm:w-1/2 mt-2 py-2 px-4 rounded text-white ${
     loading ? "bg-gray-500" : "bg-red-500"
-   } text-white hover:scale-105 hover:bg-red-600`}
+   } hover:scale-105 hover:bg-red-600 transition`}
   >
    {loading ? "Chargement..." : canceled ? "Annulé" : "Annuler"}
   </button>

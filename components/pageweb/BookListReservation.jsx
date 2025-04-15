@@ -7,32 +7,26 @@ export default function BookListReservation({ reservations }) {
  }
 
  return (
-  <div className="book-list">
+  <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
    {reservations.map((reservation) => (
-    <div
-     key={reservation.id}
-     className="book-card border p-4 mb-4 rounded shadow-md"
-    >
-     <h2 className="text-xl font-bold">{reservation.book.title}</h2>{" "}
-     {/* Utilisation de reservation.book.title */}
+    <div key={reservation.id} className="border p-4 rounded shadow-md bg-white">
+     <h2 className="text-xl font-bold mb-2">{reservation.book.title}</h2>
      <p>
-      <strong>Auteur:</strong> {reservation.book.author}{" "}
-      {/* Utilisation de reservation.book.author */}
+      <strong>Auteur:</strong> {reservation.book.author}
      </p>
      <p>
       <strong>Description:</strong>{" "}
-      {reservation.book.description || "Pas de description disponible"}{" "}
-      {/* Utilisation de reservation.book.description */}
+      {reservation.book.description || "Pas de description disponible"}
      </p>
      <p>
-      <strong>Genre:</strong> {reservation.book.genre || "Genre non spécifié"}{" "}
-      {/* Utilisation de reservation.book.genre */}
+      <strong>Genre:</strong> {reservation.book.genre || "Genre non spécifié"}
      </p>
-     <CancelReservationButton
-      reservationId={reservation.id}
-      userId={reservation.userId}
-     />{" "}
-     {/* Passer l'ID de la réservation et de l'utilisateur */}
+     <div className="mt-4">
+      <CancelReservationButton
+       reservationId={reservation.id}
+       userId={reservation.userId}
+      />
+     </div>
     </div>
    ))}
   </div>
