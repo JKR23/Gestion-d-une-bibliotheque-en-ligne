@@ -1,23 +1,20 @@
-let options = {};
-
-if (process.env.NODE_ENV === "development") {
- options = {
-  contentSecurityPolicy: {
-   directives: {
-    defaultSrc: ["'self'"],
-    baseUri: ["'self'"],
-    blockAllMixedContent: [],
-    fontSrc: ["'self'", "https:", "data:"],
-    frameAncestors: ["'self'"],
-    imgSrc: ["'self'", "data:"],
-    objectSrc: ["'none'"],
-    scriptSrc: ["'self'", "'nonce-browser-sync'"],
-    scriptSrcAttr: ["'none'"],
-    styleSrc: ["'self'", "https:", "'unsafe-inline'"],
-    upgradeInsecureRequests: [],
-   },
+let options = {
+ contentSecurityPolicy: {
+  directives: {
+   defaultSrc: ["'self'"],
+   baseUri: ["'self'"],
+   blockAllMixedContent: [],
+   fontSrc: ["'self'", "https:", "data:"],
+   frameAncestors: ["'self'"],
+   imgSrc: ["'self'", "data:", "https:"],
+   objectSrc: ["'none'"],
+   scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+   scriptSrcElem: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+   scriptSrcAttr: ["'none'"],
+   styleSrc: ["'self'", "https:", "'unsafe-inline'"],
+   upgradeInsecureRequests: [],
   },
- };
-}
+ },
+};
 
 export default options;

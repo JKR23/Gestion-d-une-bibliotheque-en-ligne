@@ -7,7 +7,8 @@
  "scripts": {
   "dev": "concurrently \"next dev -p 3000 --turbopack\" \"nodemon server.js\"",
   "build": "next build && npx prisma generate",
-  "start": "next start",
+  "start": "cross-env NODE_ENV=production node server.js",
+  "preview": "npm run build && npm run start",
   "lint": "next lint",
   "export": "next export"
  },
@@ -37,6 +38,7 @@
  "devDependencies": {
   "autoprefixer": "^10.4.20",
   "concurrently": "^9.1.2",
+  "cross-env": "^7.0.3",
   "nodemon": "^3.1.9",
   "postcss": "^8.5.3",
   "prisma": "^6.4.0",
