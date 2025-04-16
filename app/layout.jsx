@@ -1,29 +1,18 @@
+// app/layout.js
 "use client";
-
 import { useState, useEffect } from "react";
 import Footer from "@/components/Footer/Footer";
 import WelcomePage from "@/components/pageweb/Accueil/WelcomePage";
 import PageApresConnexionDeUtilisateur from "@/app/page";
 import "./globals.css";
 
-export default function Layout({ children }) {
+export default function RootLayout({ children }) {
  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
  useEffect(() => {
-  console.log("Vérification de l'état de connexion dans le localStorage...");
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
-
-  if (isLoggedIn === "true") {
-   console.log("Utilisateur est connecté, mise à jour de l'état...");
-   setIsLoggedIn(true);
-  } else {
-   console.log("Utilisateur n'est pas connecté.");
-  }
+  const isLogged = localStorage.getItem("isLoggedIn");
+  setIsLoggedIn(isLogged === "true");
  }, []);
-
- useEffect(() => {
-  console.log("État de connexion mis à jour :", isLoggedIn);
- }, [isLoggedIn]);
 
  return (
   <html lang="fr">
@@ -32,15 +21,11 @@ export default function Layout({ children }) {
      {isLoggedIn ? (
       <PageApresConnexionDeUtilisateur />
      ) : (
-      <WelcomePage
-       onLogin={() => {
-        console.log("Utilisateur s'est connecté, mise à jour de l'état...");
-        setIsLoggedIn(true);
-       }}
-      />
+      <WelcomePage onLogin={() => setIsLoggedIn(true)} />
      )}
     </main>
     <Footer />
+    {children} {/* Pour inclure tout le contenu enfant */}
    </body>
   </html>
  );
