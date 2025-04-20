@@ -1,4 +1,4 @@
-import { getReservationsByUserName } from "../../../controllers/reservationController";
+import { getReservationsByUserName } from "@/controllers/reservationController";
 
 export default async function handler(req, res) {
  if (req.method === "GET") {

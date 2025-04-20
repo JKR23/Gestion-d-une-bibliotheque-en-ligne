@@ -2,7 +2,7 @@ import {
  getBookById,
  updateBook,
  deleteBook,
-} from "../../../../controllers/bookController";
+} from "@/controllers/bookController";
 
 export default async function handler(req, res) {
  const { id } = req.query;

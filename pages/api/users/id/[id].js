@@ -2,7 +2,7 @@ import {
  getUserById,
  updateUser,
  deleteUser,
-} from "../../../../controllers/userController";
+} from "@/controllers/userController";
 
 export default async function handler(req, res) {
  const { id } = req.query;

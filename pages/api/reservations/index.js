@@ -1,4 +1,4 @@
-import { createReservation } from "../../../controllers/reservationController";
+import { createReservation } from "@/controllers/reservationController";
 
 export default async function handler(req, res) {
  if (req.method === "POST") {

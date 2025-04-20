@@ -1,4 +1,4 @@
-import { registerUser } from "../../../controllers/userController";
+import { registerUser } from "@/controllers/userController";
 
 export default async function handler(req, res) {
  if (req.method === "POST") {

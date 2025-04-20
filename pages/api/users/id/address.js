@@ -1,4 +1,4 @@
-import { changeUserAddress } from "../../../../../controllers/userController";
+import { changeUserAddress } from "@/controllers/userController";
 
 export default async function handler(req, res) {
  const { userId } = req.query;

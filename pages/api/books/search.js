@@ -1,4 +1,4 @@
-import { searchBooks } from "../../../controllers/bookController";
+import { searchBooks } from "@/controllers/bookController";
 
 export default async function handler(req, res) {
  if (req.method === "GET") {

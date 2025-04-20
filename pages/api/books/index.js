@@ -1,4 +1,4 @@
-import { getBooks, addBook } from "../../../controllers/bookController";
+import { getBooks, addBook } from "@/controllers/bookController";
 
 export default async function handler(req, res) {
  switch (req.method) {
