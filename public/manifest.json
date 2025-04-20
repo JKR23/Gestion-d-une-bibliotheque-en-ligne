@@ -1,6 +1,6 @@
 {
- "name": "Gestion Bibliothèque",
- "short_name": "Bibliothèque",
+ "name": "Gestion BibliOnLine",
+ "short_name": "BibliOnLine",
  "start_url": "/",
  "display": "standalone",
  "background_color": "#ffffff",
