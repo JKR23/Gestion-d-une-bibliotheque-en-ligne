@@ -97,7 +97,7 @@ export const searchBooks = async (req, res) => {
 
 // Fonction pour modifier un livre par ID
 export const updateBook = async (req, res) => {
- const { id } = req.params;
+ const { id } = req.query;
  const { title, author, description, stock, genre, isAvailable } = req.body; // Ajouter genre et isAvailable
  try {
   const book = await prisma.book.findUnique({
@@ -124,7 +124,7 @@ export const updateBook = async (req, res) => {
 
 // Fonction pour supprimer un livre par ID
 export const deleteBook = async (req, res) => {
- const { id } = req.params;
+ const { id } = req.requery;
 
  try {
   const book = await prisma.book.findUnique({
