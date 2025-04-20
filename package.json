@@ -9,8 +9,7 @@
   "build": "next build && npx prisma generate",
   "start": "next start",
   "preview": "npm run build && npm run start",
-  "lint": "next lint",
-  "export": "next export"
+  "lint": "next lint"
  },
  "author": "Ricarka Kuntuala",
  "license": "UNLICENSED",
