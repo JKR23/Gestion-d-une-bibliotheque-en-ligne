@@ -9,7 +9,10 @@ export default function BookList({ books }) {
  return (
   <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
    {books.map((book) => (
-    <div key={book.id} className="border p-4 rounded shadow-md bg-white">
+    <div
+     key={book.id}
+     className="border p-4 rounded shadow-md bg-white text-txtClr"
+    >
      <h2 className="text-xl font-bold mb-2">{book.title}</h2>
      <p>
       <strong>Auteur:</strong> {book.author}

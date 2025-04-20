@@ -1,13 +1,13 @@
 {
  "name": "gabarit",
  "version": "1.0.0",
- "description": "Gabarit Serveur avec Node.js et express",
+ "description": "Gabarit Serveur avec Node.js et Next.js",
  "main": "server.js",
  "type": "module",
  "scripts": {
-  "dev": "concurrently \"next dev -p 3000 --turbopack\" \"nodemon server.js\"",
+  "dev": "next dev -p 3000 --turbopack",
   "build": "next build && npx prisma generate",
-  "start": "cross-env NODE_ENV=production node server.js",
+  "start": "next start",
   "preview": "npm run build && npm run start",
   "lint": "next lint",
   "export": "next export"
@@ -21,11 +21,7 @@
   "@prisma/client": "^6.4.0",
   "axios": "^1.8.4",
   "bcryptjs": "^3.0.2",
-  "compression": "^1.7.5",
-  "cors": "^2.8.5",
   "dotenv": "^16.4.7",
-  "express": "^4.21.2",
-  "helmet": "^8.0.0",
   "jsonwebtoken": "^9.0.2",
   "mysql2": "^3.12.0",
   "next": "^15.2.1",
@@ -37,9 +33,7 @@
  },
  "devDependencies": {
   "autoprefixer": "^10.4.20",
-  "concurrently": "^9.1.2",
   "cross-env": "^7.0.3",
-  "nodemon": "^3.1.9",
   "postcss": "^8.5.3",
   "prisma": "^6.4.0",
   "tailwindcss": "^3.4.17"

@@ -2,58 +2,135 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000";
-
 const AddBookForm = ({ onBack, onRefresh }) => {
  const [title, setTitle] = useState("");
  const [author, setAuthor] = useState("");
- const [quantity, setQuantity] = useState("");
+ const [description, setDescription] = useState("");
+ const [stock, setStock] = useState("");
+ const [genre, setGenre] = useState("");
+ const [isAvailable, setIsAvailable] = useState(true);
 
  const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-   await axios.post(`${API_URL}/books`, { title, author, quantity });
-   onRefresh(); // Recharge les livres
-   onBack(); // Revenir à la liste
+   await axios.post("/api/books", {
+    title,
+    author,
+    description,
+    stock: parseInt(stock),
+    genre,
+    isAvailable,
+   });
+   onRefresh();
+   onBack();
   } catch (error) {
    console.error("Erreur lors de l’ajout du livre:", error);
   }
  };
 
  return (
-  <div className="p-4 w-full max-w-xl mx-auto">
-   <h2 className="text-xl font-semibold mb-4">Ajouter un Livre</h2>
-   <form onSubmit={handleSubmit} className="space-y-4">
-    <input
-     type="text"
-     placeholder="Titre du livre"
-     value={title}
-     onChange={(e) => setTitle(e.target.value)}
-     className="w-full p-2 border rounded"
-    />
-    <input
-     type="text"
-     placeholder="Auteur"
-     value={author}
-     onChange={(e) => setAuthor(e.target.value)}
-     className="w-full p-2 border rounded"
-    />
-    <input
-     type="number"
-     placeholder="Quantité"
-     value={quantity}
-     onChange={(e) => setQuantity(e.target.value)}
-     className="w-full p-2 border rounded"
-    />
-    <div className="flex justify-between">
+  <div className="p-6 w-full max-w-4xl mx-auto bg-white rounded-xl shadow-md border border-gray-200">
+   <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">
+    Ajouter un Livre
+   </h2>
+   <form onSubmit={handleSubmit} className="space-y-6">
+    <div className="grid md:grid-cols-2 gap-4">
+     {/* Titre */}
+     <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+       Titre du livre
+      </label>
+      <input
+       type="text"
+       value={title}
+       onChange={(e) => setTitle(e.target.value)}
+       className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+       required
+      />
+     </div>
+
+     {/* Auteur */}
+     <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+       Auteur
+      </label>
+      <input
+       type="text"
+       value={author}
+       onChange={(e) => setAuthor(e.target.value)}
+       className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+       required
+      />
+     </div>
+
+     {/* Description */}
+     <div className="md:col-span-2">
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+       Description
+      </label>
+      <textarea
+       value={description}
+       onChange={(e) => setDescription(e.target.value)}
+       className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+       rows={3}
+      ></textarea>
+     </div>
+
+     {/* Stock */}
+     <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+       Stock
+      </label>
+      <input
+       type="number"
+       value={stock}
+       onChange={(e) => setStock(e.target.value)}
+       className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+       required
+      />
+     </div>
+
+     {/* Genre */}
+     <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+       Genre
+      </label>
+      <input
+       type="text"
+       value={genre}
+       onChange={(e) => setGenre(e.target.value)}
+       className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+       required
+      />
+     </div>
+
+     {/* Disponible */}
+     <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+       Disponible ?
+      </label>
+      <select
+       value={isAvailable.toString()}
+       onChange={(e) => setIsAvailable(e.target.value === "true")}
+       className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+      >
+       <option value="true">Oui</option>
+       <option value="false">Non</option>
+      </select>
+     </div>
+    </div>
+
+    {/* Boutons */}
+    <div className="flex justify-between pt-6">
      <button
       type="submit"
-      className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+      className="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition"
      >
       Ajouter
      </button>
      <button
-      className="px-4 py-2 border rounded hover:bg-gray-100 transition"
+      type="button"
+      className="border border-gray-300 px-6 py-2 rounded-lg bg-red-500 text-white hover:bg-red-700 transition"
       onClick={onBack}
      >
       Retour

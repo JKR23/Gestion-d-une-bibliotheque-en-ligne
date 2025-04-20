@@ -191,7 +191,7 @@ export const updateUser = async (req, res) => {
 // Supprimer un utilisateur par son ID
 export const deleteUser = async (req, res) => {
  try {
-  const { id } = req.params; // Récupérer l'ID de l'URL
+  const { id } = req.query; // Récupérer l'ID de l'URL
   console.log(`Tentative de suppression de l'utilisateur avec ID: ${id}`);
 
   const user = await userModel.findUserById(id);

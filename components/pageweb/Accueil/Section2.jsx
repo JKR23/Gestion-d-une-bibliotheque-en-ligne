@@ -27,7 +27,7 @@ export default function Section2() {
 
  return (
   <div className="w-full h-full p-4 sm:p-6 md:p-8 bg-gray-100 flex flex-col">
-   <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
+   <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-black">
     Découvrez nos Livres
    </h2>
 
@@ -53,7 +53,7 @@ export default function Section2() {
 
    {/* Livres Recommandés */}
    <div className="mb-8">
-    <h3 className="text-xl sm:text-2xl font-semibold mb-4">
+    <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-black">
      Livres Recommandés
     </h3>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -73,7 +73,9 @@ export default function Section2() {
 
    {/* Catégories */}
    <div className="mb-8">
-    <h3 className="text-xl sm:text-2xl font-semibold mb-4">Catégories</h3>
+    <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-black">
+     Catégories
+    </h3>
     <div className="flex flex-wrap gap-2">
      {categories.map((category, index) => (
       <span

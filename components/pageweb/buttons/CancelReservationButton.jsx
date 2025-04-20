@@ -10,7 +10,7 @@ export default function CancelReservationButton({ reservationId }) {
   setLoading(true);
   try {
    const response = await fetch(
-    `http://localhost:5000/api/reservations/id/${reservationId}`,
+    `http://localhost:3000/api/reservations/id/byReservationId/${reservationId}`,
     {
      method: "DELETE",
     }

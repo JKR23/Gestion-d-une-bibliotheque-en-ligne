@@ -14,7 +14,7 @@ export default function ReserveButton({ bookId, date }) {
 
   setLoading(true);
   try {
-   const response = await fetch("http://localhost:5000/api/reservations", {
+   const response = await fetch("http://localhost:3000/api/reservations", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ userId: userIdInt, bookId, reservedUntil: date }),

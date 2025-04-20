@@ -10,7 +10,7 @@ export default function Catalogue() {
 
  const fetchBooks = async () => {
   try {
-   const response = await fetch("http://localhost:5000/api/books");
+   const response = await fetch("/api/books"); // Mise à jour pour utiliser la route API relative
    const data = await response.json();
    setBooks(data);
    setFilteredBooks(data);

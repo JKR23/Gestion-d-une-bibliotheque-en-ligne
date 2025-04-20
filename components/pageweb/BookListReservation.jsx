@@ -9,7 +9,10 @@ export default function BookListReservation({ reservations }) {
  return (
   <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
    {reservations.map((reservation) => (
-    <div key={reservation.id} className="border p-4 rounded shadow-md bg-white">
+    <div
+     key={reservation.id}
+     className="border p-4 rounded shadow-md bg-white text-txtClr"
+    >
      <h2 className="text-xl font-bold mb-2">{reservation.book.title}</h2>
      <p>
       <strong>Auteur:</strong> {reservation.book.author}

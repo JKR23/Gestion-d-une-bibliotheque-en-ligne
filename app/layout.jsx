@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
      )}
     </main>
     <Footer />
-    {children} {/* Pour inclure tout le contenu enfant */}
+    {/*{children} {/* Pour inclure tout le contenu enfant */}
    </body>
   </html>
  );

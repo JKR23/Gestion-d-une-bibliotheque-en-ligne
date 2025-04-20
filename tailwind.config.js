@@ -18,6 +18,7 @@ export default {
     darkPurple: "#4B0082", // Mauve très foncé
     reservationButtonBg: "#111832",
     survolButtonBg: "#111841",
+    txtClr: "#111827",
    },
   },
  },
