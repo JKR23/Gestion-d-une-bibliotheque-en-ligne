@@ -6,15 +6,18 @@ export default function CancelReservationButton({ reservationId }) {
  const [loading, setLoading] = useState(false);
  const [canceled, setCanceled] = useState(false);
 
+ // Déterminer l'URL de l'API en fonction de l'environnement
+ const apiUrl =
+  process.env.NODE_ENV === "production"
+   ? `https://gestion-d-une-bibliotheque-en-ligne.vercel.app/api/reservations/id/byReservationId/${reservationId}`
+   : `http://localhost:3000/api/reservations/id/byReservationId/${reservationId}`;
+
  const handleCancel = async () => {
   setLoading(true);
   try {
-   const response = await fetch(
-    `http://localhost:3000/api/reservations/id/byReservationId/${reservationId}`,
-    {
-     method: "DELETE",
-    }
-   );
+   const response = await fetch(apiUrl, {
+    method: "DELETE",
+   });
 
    if (response.ok) {
     setCanceled(true);

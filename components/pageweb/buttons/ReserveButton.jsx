@@ -7,6 +7,12 @@ export default function ReserveButton({ bookId, date }) {
  const [reserved, setReserved] = useState(false);
  const userId = localStorage.getItem("userId");
 
+ // Déterminer l'URL de l'API en fonction de l'environnement
+ const apiUrl =
+  process.env.NODE_ENV === "production"
+   ? "https://gestion-d-une-bibliotheque-en-ligne.vercel.app/api/reservations"
+   : "http://localhost:3000/api/reservations";
+
  const handleReserve = async () => {
   if (!date || !userId) return;
   const userIdInt = parseInt(userId, 10);
@@ -14,7 +20,7 @@ export default function ReserveButton({ bookId, date }) {
 
   setLoading(true);
   try {
-   const response = await fetch("http://localhost:3000/api/reservations", {
+   const response = await fetch(apiUrl, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ userId: userIdInt, bookId, reservedUntil: date }),
