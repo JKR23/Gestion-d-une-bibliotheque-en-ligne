@@ -44,3 +44,4 @@ next-env.d.ts
 .android
 /capacitor.config.json
 .capacitor.config.json
+/out
