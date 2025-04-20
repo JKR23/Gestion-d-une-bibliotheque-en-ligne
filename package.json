@@ -5,10 +5,9 @@
  "main": "server.js",
  "type": "module",
  "scripts": {
-  "dev": "next dev -p 3000 --turbopack",
-  "build": "next build && npx prisma generate",
+  "dev": "next dev --turbopack",
+  "build": "next build",
   "start": "next start",
-  "preview": "npm run build && npm run start",
   "lint": "next lint"
  },
  "author": "Ricarka Kuntuala",
